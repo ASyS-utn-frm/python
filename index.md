@@ -1,4 +1,10 @@
 
+<style>
+  .page-title {
+    display: none;
+  }
+</style>
+
 <div style="text-align: center;">
   <img src="resources/logoUTN.jpg" alt="Logo UTN">
 </div>
@@ -33,28 +39,28 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
   <tbody>
     <tr>
       <td>1. Introducción a Google Colab</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/01_Introduccion_a_colab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></td>
-      <td rowspan="6"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/ejercitacion_1.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/01_Introduccion_a_colab.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td rowspan="6"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/ejercitacion_1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>2. Introducción a Python. Tipos de datos y operaciones.</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/02_Ttipos_de_datos.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/02_Ttipos_de_datos.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>3. Estructuras de Control</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/03_estructuras_de_control.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/03_estructuras_de_control.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>4. Funciones</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/04_Funciones.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/04_Funciones.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>5. Introducción a librerías. La librería Numpy</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/05_Introduccion_NumPy.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/05_Introduccion_NumPy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>6. Generación de gráficos. Introducción a MatPlotLib</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/06_MatPlotLib.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" target="_blank" alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/06_MatPlotLib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
 </table>
