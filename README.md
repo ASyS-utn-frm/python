@@ -17,7 +17,6 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
 
 # Contenidos
 
-En esta tabla, la primera columna tiene celdas combinadas:
 
 <table>
   <thead>
