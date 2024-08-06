@@ -1,4 +1,8 @@
-![Logo UTN](resources/logoUTN.jpg)  
+
+<div style="text-align: center;">
+  <img src="resources/logoUTN.jpg" alt="Logo UTN">
+</div>
+
 
 
 # Tutoriales de Python para Análisis de Señales y Sistemas
