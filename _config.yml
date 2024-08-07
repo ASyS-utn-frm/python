@@ -1,5 +1,6 @@
 remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
-title: Tutoriales de Python para Análisis de Señales y Sistemas
+title:
+description: Tutoriales de Python para Análisis de Señales y Sistemas
 navbar: false
 plugins:
   - jekyll-feed
