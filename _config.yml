@@ -1,9 +1,9 @@
-layout: page
-
 remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
-title: Tutoriales de Python para Análisis de Señales y Sistemas
 layout: page
+title: Tutoriales de Python para Análisis de Señales y Sistemas
+subtitle: The page subtitle
 description: Tutoriales de Python para Análisis de Señales y Sistemas
+image: _includes/logoUTN.jpg
 navbar: false
 plugins:
   - jekyll-feed
