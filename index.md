@@ -11,7 +11,7 @@
 
 
 
-# Tutoriales de Python para Análisis de Señales y Sistemas
+
 
 ¡Bienvenidos a este conjunto de tutoriales diseñados específicamente para introducir las herramientas básicas de Python, orientadas a explicar y resolver ejercicios de Análisis de Señales y Sistemas! Estos tutoriales están destinados a los estudiantes de la carrera de Ingeniería en Electrónica de la Universidad Tecnológica Nacional Facultad Regional Mendoza.
 
