@@ -40,7 +40,7 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
     <tr>
       <td>1. Introducción a Google Colab</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/01_Introduccion_a_colab.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
-      <td rowspan="6"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/ejercitacion_1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td rowspan="6"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Ejercitacion_1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>2. Introducción a Python. Tipos de datos y operaciones.</td>
