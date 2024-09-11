@@ -72,7 +72,7 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
   <thead>
     <tr>
       <th>Tema</th>
-      <th>Notebook Teórico/práctico</th>
+      <th>Notebook Teórico/Práctico</th>
     </tr>
   </thead>
   <tbody>
