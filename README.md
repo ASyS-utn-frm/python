@@ -83,7 +83,7 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
   </tbody>
 </table>
 
-#Entrega
+# Entrega
 
 Una vez que hayas completado un trabajo en google colab, debes dirigirte a "Archivo->Descargar->Descargar .ipynb" 
 
