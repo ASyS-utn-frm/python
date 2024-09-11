@@ -33,7 +33,7 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
     <tr>
       <th>Tema</th>
       <th>Notebook Teórico/práctico</th>
-      <th>Notebook a resolver por estudiantes</th>
+      <th>Notebook Trabajo práctico 0</th>
     </tr>
   </thead>
   <tbody>
@@ -83,6 +83,15 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
   </tbody>
 </table>
 
+#Entrega
+
+Una vez que hayas completado un trabajo en google colab, debes dirigirte a "Archivo->Descargar->Descargar .ipynb" 
+
+Una vez descargado debes enviarlo a la dirección de correo asys.utn@gmail.com indicando tu nombre completo y legajo.
+
+Fecha de entrega de los prácticos 0 y 1: Viernes 20/09/2024.
+
+
 # Autor
 
-Estos tutoriales han sido desarrollados por el Profesor Javier Velez, profesor de la Universidad Tecnológica Nacional. Mi objetivo es proporcionar una guía práctica y accesible que facilite el aprendizaje y la aplicación de Python en el análisis de señales y sistemas.
+Estos tutoriales han sido desarrollados por Javier Velez, profesor de la Universidad Tecnológica Nacional. Mi objetivo es proporcionar una guía práctica y accesible que facilite el aprendizaje y la aplicación de Python en el análisis de señales y sistemas.
