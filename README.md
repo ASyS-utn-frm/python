@@ -25,7 +25,7 @@ Para comenzar con los tutoriales, simplemente abre el enlace de Google Colab pro
 
 Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan adquirir las habilidades necesarias para enfrentar con éxito los desafíos del Análisis de Señales y Sistemas. ¡Buena suerte y feliz aprendizaje!
 
-# Contenidos
+# Introducción a Python
 
 
 <table>
@@ -66,8 +66,23 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
 </table>
 
 
+# Trabajos prácticos 
 
+<table>
+  <thead>
+    <tr>
+      <th>Tema</th>
+      <th>Notebook Teórico/práctico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Trabajo práctico nº 1. Convolución</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP1_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+  </tbody>
+</table>
 
 # Autor
 
-Estos tutoriales han sido desarrollados por Mg. Ing. Javier Velez, profesor de la Universidad Tecnológica Nacional. Con una amplia experiencia en el área de la Ingeniería en Electrónica y el uso de herramientas de programación para la resolución de problemas técnicos, mi objetivo es proporcionar una guía práctica y accesible que facilite el aprendizaje y la aplicación de Python en el análisis de señales y sistemas.
+Estos tutoriales han sido desarrollados por el Profesor Javier Velez, profesor de la Universidad Tecnológica Nacional. Mi objetivo es proporcionar una guía práctica y accesible que facilite el aprendizaje y la aplicación de Python en el análisis de señales y sistemas.

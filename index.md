@@ -68,7 +68,20 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
 
 # Trabajos prácticos 
 
-En proceso
+<table>
+  <thead>
+    <tr>
+      <th>Tema</th>
+      <th>Notebook Teórico/práctico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Trabajo práctico nº 1. Convolución</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP1_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+  </tbody>
+</table>
 
 # Autor
 
