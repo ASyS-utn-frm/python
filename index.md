@@ -32,8 +32,8 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
   <thead>
     <tr>
       <th>Tema</th>
-      <th>Notebook Teórico/práctico</th>
-      <th>Notebook Trabajo práctico 0</th>
+      <th>Notebook Teórico/Práctico</th>
+      <th>Notebook Trabajo Práctico 0</th>
     </tr>
   </thead>
   <tbody>
@@ -66,7 +66,7 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
 </table>
 
 
-# Trabajos prácticos 
+# Trabajos Prácticos 
 
 <table>
   <thead>
@@ -77,7 +77,7 @@ Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan
   </thead>
   <tbody>
     <tr>
-      <td>Trabajo práctico nº 1. Convolución</td>
+      <td>Trabajo Práctico nº 1. Convolución</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP1_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
