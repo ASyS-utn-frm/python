@@ -17,7 +17,8 @@
 
 El material está desarrollado en Jupyter Notebooks y pensado para ejecutarse en Google Colab, una plataforma en la nube que permite ejecutar código en un entorno de Jupyter sin la necesidad de instalaciones o configuraciones complejas. Esto facilita el acceso a los recursos y ejemplos necesarios para acompañar los ejercicios de la materia.
 
-Cómo utilizar los tutoriales
+## Cómo utilizar los tutoriales:
+
 Para comenzar, simplemente abre el enlace de Google Colab asociado a cada notebook. Recuerda iniciar sesión en tu cuenta de Google para guardar tu progreso y poder realizar modificaciones. Sigue las instrucciones proporcionadas en cada notebook, y no dudes en experimentar con el código para afianzar los conceptos.
 
 Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desarrollar las habilidades necesarias para afrontar con éxito los desafíos del Análisis de Señales y Sistemas. ¡Mucho éxito y que disfrutes el proceso de aprendizaje!
