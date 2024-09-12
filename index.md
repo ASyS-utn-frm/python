@@ -26,12 +26,6 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
 
 
 
-**Cómo Utilizar los Tutoriales**
-
-Para comenzar con los tutoriales, simplemente abre el enlace de Google Colab proporcionado para cada notebook. Asegúrate de estar conectado a tu cuenta de Google para poder guardar tu progreso y realizar modificaciones. Sigue las instrucciones en cada notebook y no dudes en experimentar con el código y realizar preguntas a medida que avanzas.
-
-Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan adquirir las habilidades necesarias para enfrentar con éxito los desafíos del Análisis de Señales y Sistemas. ¡Buena suerte y feliz aprendizaje!
-
 # Introducción a Python
 
 

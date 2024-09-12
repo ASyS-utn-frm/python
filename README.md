@@ -10,11 +10,14 @@
 </div>
 
 
+
+
+
 ¡Bienvenidos a este conjunto de tutoriales, creados especialmente para introducirte a las herramientas básicas de Python, enfocadas en la resolución de ejercicios de Análisis de Señales y Sistemas! Estos tutoriales están dirigidos a los estudiantes de Ingeniería en Electrónica de la Universidad Tecnológica Nacional, Facultad Regional Mendoza.
 
 El material está desarrollado en Jupyter Notebooks y pensado para ejecutarse en Google Colab, una plataforma en la nube que permite ejecutar código en un entorno de Jupyter sin la necesidad de instalaciones o configuraciones complejas. Esto facilita el acceso a los recursos y ejemplos necesarios para acompañar los ejercicios de la materia.
 
-##Cómo utilizar los tutoriales
+# Cómo utilizar los tutoriales:
 
 Para comenzar, simplemente abre el enlace de Google Colab asociado a cada notebook. Recuerda iniciar sesión en tu cuenta de Google para guardar tu progreso y poder realizar modificaciones. Sigue las instrucciones proporcionadas en cada notebook, y no dudes en experimentar con el código para afianzar los conceptos.
 
@@ -22,13 +25,6 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
 
 
 
-
-
-**Cómo Utilizar los Tutoriales**
-
-Para comenzar con los tutoriales, simplemente abre el enlace de Google Colab proporcionado para cada notebook. Asegúrate de estar conectado a tu cuenta de Google para poder guardar tu progreso y realizar modificaciones. Sigue las instrucciones en cada notebook y no dudes en experimentar con el código y realizar preguntas a medida que avanzas.
-
-Espero que estos tutoriales te sean de gran ayuda en tu formación y te permitan adquirir las habilidades necesarias para enfrentar con éxito los desafíos del Análisis de Señales y Sistemas. ¡Buena suerte y feliz aprendizaje!
 
 # Introducción a Python
 
