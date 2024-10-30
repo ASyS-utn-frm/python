@@ -17,7 +17,7 @@
 
 El material está desarrollado en Jupyter Notebooks y pensado para ejecutarse en Google Colab, una plataforma en la nube que permite ejecutar código en un entorno de Jupyter sin la necesidad de instalaciones o configuraciones complejas. Esto facilita el acceso a los recursos y ejemplos necesarios para acompañar los ejercicios de la materia.
 
-## Cómo utilizar los tutoriales:
+# Cómo utilizar los tutoriales:
 
 Para comenzar, simplemente abre el enlace de Google Colab asociado a cada notebook. Recuerda iniciar sesión en tu cuenta de Google para guardar tu progreso y poder realizar modificaciones. Sigue las instrucciones proporcionadas en cada notebook, y no dudes en experimentar con el código para afianzar los conceptos.
 
@@ -62,6 +62,10 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
     <tr>
       <td>6. Generación de gráficos. Introducción a MatPlotLib</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/06_MatPlotLib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+    <tr>
+      <td>7. Cálculo simbñolico. Introducción a SymPy</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/07_SymPy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
 </table>

@@ -63,6 +63,10 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
       <td>6. Generación de gráficos. Introducción a MatPlotLib</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/06_MatPlotLib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
+    <tr>
+      <td>7. Cálculo simbñolico. Introducción a SymPy</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/07_SymPy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
   </tbody>
 </table>
 
