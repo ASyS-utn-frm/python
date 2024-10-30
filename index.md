@@ -85,6 +85,10 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
       <td>Trabajo Práctico nº 1. Convolución</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP1_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
+    <tr>
+      <td>Trabajo Práctico nº 2. Análisis de Fourier en tiempo continuo</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP2_analisis_de_fourier.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
   </tbody>
 </table>
 
