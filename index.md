@@ -41,7 +41,7 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
     <tr>
       <td>1. Introducción a Google Colab</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/01_Introduccion_a_colab.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
-      <td rowspan="7"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Ejercitacion_1.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td rowspan="7"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP0.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>2. Introducción a Python. Tipos de datos y operaciones.</td>
@@ -91,7 +91,7 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
     </tr>
     <tr>
       <td>Trabajo Práctico nº 3. Análisis de Fourier en tiempo discreto y sistemas LTI con python</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_FFT_y_sistemas_LTI.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_FFT_y_sistemas_LTIr.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
 </table>
@@ -103,8 +103,6 @@ Una vez que hayas completado un trabajo en google colab, debes dirigirte a "Arch
 Una vez descargado debes enviarlo a la dirección de correo asys.utn@gmail.com indicando tu nombre completo y legajo.
 
 Fecha de entrega de los prácticos 0 y 1: Viernes 20/09/2024.
-
-Fecha de entrega de los prácticos 2 y 3: Lunes 25/11/2024.
 
 
 # Autor
