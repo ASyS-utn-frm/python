@@ -91,7 +91,7 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
     </tr>
     <tr>
       <td>Trabajo Práctico nº 3. Análisis de Fourier en tiempo discreto y sistemas LTI con python</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_FFT_y_sistemas_LTIr.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_FFT_y_sistemas_LTI.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
 </table>
