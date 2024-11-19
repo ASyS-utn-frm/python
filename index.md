@@ -104,6 +104,7 @@ Una vez descargado debes enviarlo a la dirección de correo asys.utn@gmail.com i
 
 Fecha de entrega de los prácticos 0 y 1: Viernes 20/09/2024.
 
+Fecha de entrega de los prácticos 2 y 3: Lunes 26/11/2024.
 
 # Autor
 
