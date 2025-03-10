@@ -81,16 +81,24 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
     </tr>
   </thead>
   <tbody>
+      <tr>
+      <td>Trabajo Práctico nº 1. Variable compleja</td>
+      <td><a href="    " target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+        <tr>
+      <td>Trabajo Práctico nº 2. Representación de señales</td>
+      <td><a href="   " target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
     <tr>
-      <td>Trabajo Práctico nº 1. Convolución</td>
+      <td>Trabajo Práctico nº 3. Convolución</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP1_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
-      <td>Trabajo Práctico nº 2. Análisis de Fourier en tiempo continuo</td>
+      <td>Trabajo Práctico nº 4. Análisis de Fourier en tiempo continuo</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP2_analisis_de_fourier.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
-      <td>Trabajo Práctico nº 3. Análisis de Fourier en tiempo discreto y sistemas LTI con python</td>
+      <td>Trabajo Práctico nº 5. Análisis de Fourier en tiempo discreto y sistemas LTI con python</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_FFT_y_sistemas_LTI.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
@@ -102,9 +110,9 @@ Una vez que hayas completado un trabajo en google colab, debes dirigirte a "Arch
 
 Una vez descargado debes enviarlo a la dirección de correo asys.utn@gmail.com indicando tu nombre completo y legajo.
 
-Fecha de entrega de los prácticos 0 y 1: Viernes 20/09/2024.
+Fecha de entrega de los prácticos 0 y 1: Viernes 05/04/2024.
 
-Fecha de entrega de los prácticos 2 y 3: Lunes 26/11/2024.
+
 
 # Autor
 
