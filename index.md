@@ -111,7 +111,7 @@ Una vez que hayas completado un trabajo en google colab, debes dirigirte a "Arch
 Una vez descargado debes enviarlo a la dirección de correo asys.utn@gmail.com indicando tu nombre completo y legajo.
 
 Fecha de entrega de los prácticos 0: Viernes 05/04/2025.
-Fecha de entrega de los prácticos 1: Viernes 12/04/2025 
+Fecha de entrega de los prácticos 1: Domingo 11/05/2025 
 
 
 # Autor
