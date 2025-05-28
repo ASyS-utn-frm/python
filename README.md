@@ -82,23 +82,19 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
   </thead>
   <tbody>
       <tr>
-      <td>Trabajo Práctico nº 1. Variable compleja</td>
+      <td>Trabajo Práctico n° 1. Variable compleja</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP1_variable_compleja.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
-        <tr>
-      <td>Trabajo Práctico nº 2. Representación de señales</td>
-      <td><a href="   " target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
-    </tr>
     <tr>
-      <td>Trabajo Práctico nº 3. Convolución</td>
+      <td>Trabajo Práctico n° 2. Convolución</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
-      <td>Trabajo Práctico nº 4. Análisis de Fourier en tiempo continuo</td>
+      <td>Trabajo Práctico n° 3. Análisis de Fourier en tiempo continuo</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP4_analisis_de_fourier.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
-      <td>Trabajo Práctico nº 5. Análisis de Fourier en tiempo discreto y sistemas LTI con python</td>
+      <td>Trabajo Práctico n° 4. Análisis de Fourier en tiempo discreto y sistemas LTI con python</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP5_FFT_y_sistemas_LTI.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
@@ -112,6 +108,7 @@ Una vez descargado debes enviarlo a la dirección de correo asys.utn@gmail.com i
 
 Fecha de entrega del práctico 0: Viernes 05/04/2025.
 Fecha de entrega del práctico 1: Domingo 11/05/2025 
+Fecha de entrega del práctico 2: Viernes 22/06/2025.
 
 
 # Autor
