@@ -110,7 +110,7 @@ Fecha de entrega del práctico 0: Viernes 05/04/2025.
 
 Fecha de entrega del práctico 1: Domingo 11/05/2025 
 
-Fecha de entrega del práctico 2: Viernes 22/06/2025.
+Fecha de entrega del práctico 2: Domingo 22/06/2025.
 
 
 # Autor
