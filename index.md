@@ -104,13 +104,17 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
 
 Una vez que hayas completado un trabajo en google colab, debes dirigirte a "Archivo->Descargar->Descargar .ipynb" 
 
-Una vez descargado debes enviarlo a la dirección de correo asys.utn@gmail.com indicando tu nombre completo y legajo.
+<span style="color: red;">IMPORTANTE: nueva metodología de entrega</span>
 
-Fecha de entrega del práctico 0: Viernes 05/04/2025.
+Una vez descargado debes subirlo al aula virtual de la materia en el apartado destinado para tal fin dentro de la pestaña "General"
 
-Fecha de entrega del práctico 1: Domingo 11/05/2025.
+~~Fecha de entrega del práctico 0: Viernes 05/04/2025.~~
 
-Fecha de entrega del práctico 2: Domingo 22/06/2025.
+~~Fecha de entrega del práctico 1: Domingo 11/05/2025 ~~
+
+~~Fecha de entrega del práctico 2: Domingo 22/06/2025.~~
+
+Fecha de entrega de trabajo práctico n° 3: Domingo 28/09
 
 
 # Autor
