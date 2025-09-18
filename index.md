@@ -87,15 +87,15 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
     </tr>
     <tr>
       <td>Trabajo Práctico n° 2. Convolución</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP2_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>Trabajo Práctico n° 3. Análisis de Fourier en tiempo continuo</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP4_analisis_de_fourier.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP3_analisis_de_fourier.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>Trabajo Práctico n° 4. Análisis de Fourier en tiempo discreto y sistemas LTI con python</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP5_FFT_y_sistemas_LTI.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP4_FFT_y_sistemas_LTI.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
 </table>
