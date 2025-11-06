@@ -108,13 +108,7 @@ Una vez que hayas completado un trabajo en google colab, debes dirigirte a "Arch
 
 Una vez descargado debes subirlo al aula virtual de la materia en el apartado destinado para tal fin dentro de la pestaña "General"
 
-~~Fecha de entrega del práctico 0: Viernes 05/04/2025.~~
-
-~~Fecha de entrega del práctico 1: Domingo 11/05/2025~~
-
-~~Fecha de entrega del práctico 2: Domingo 22/06/2025.~~
-
-Fecha de entrega de trabajo práctico n° 3: Domingo 28/09
+Fecha de entrega de trabajo práctico n° 4: Domingo 23/11
 
 
 # Autor
