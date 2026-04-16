@@ -14,7 +14,7 @@
 
 # Curso introductorio de Python para Análisis de Señales y Sistemas
 
-Este es un **curso introductorio** de Python orientado al análisis de señales y sistemas. Está pensado para estudiantes del Departamento de Ingeniería en Tecnologías Electrónicas de la Universidad Tecnológica Nacional, Facultad Regional Mendoza, que tengan poca o ninguna experiencia previa con programación.
+Este es un **curso introductorio** de Python orientado al análisis de señales y sistemas. Está pensado para estudiantes del Departamento de Ingeniería en Tecnologías Electrónicas de la Universidad Tecnológica Nacional, Facultad Regional Mendoza, que tengan poca experiencia previa con programación.
 
 El material se desarrolla como una serie de Jupyter Notebooks pensados para ejecutarse en Google Colab, una plataforma en la nube que permite correr código Python directamente desde el navegador, sin instalaciones locales.
 
