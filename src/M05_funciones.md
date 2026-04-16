@@ -243,6 +243,25 @@ print(celsius_a_fahrenheit(100))  # 212.0
 %% md prov-22b
 Cada función hace una sola cosa y es fácil de verificar. Al combinarlas, obtenemos una nueva función más compleja sin repetir código ni complicar la lógica. Este estilo — **descomponer** un problema grande en funciones chicas y bien nombradas — es una de las herramientas más potentes para escribir código que se entienda y se pueda mantener.
 
+%% md prov-22c
+### Usar funciones que ya vienen con Python: `import`
+
+Antes de la próxima actividad necesitamos una función nueva, `log10` (el logaritmo en base 10), que no viene disponible por defecto. Python trae un conjunto enorme de funciones matemáticas en un **módulo** de su biblioteca estándar llamado `math`, pero hay que **importarlas** explícitamente antes de usarlas.
+
+La forma más cómoda es traer solo lo que necesitás con `from ... import ...`:
+
+%% code prov-22d
+from math import log10, sqrt, pi
+
+print(log10(1000))    # 3.0
+print(sqrt(2))        # 1.4142...
+print(pi)             # 3.1415...
+
+%% md prov-22e
+Una vez ejecutada la línea `from math import ...`, esos nombres (`log10`, `sqrt`, `pi`) quedan disponibles en el resto del notebook como si fueran funciones o variables cualquiera.
+
+> **Convención.** Los `import` suelen ir **al principio** del notebook (o al principio de la celda de ejemplo, si el ejemplo es autocontenido). Más adelante, en el módulo de NumPy, vas a ver una variante (`import numpy as np`) que importa el módulo completo bajo un nombre corto.
+
 %% md enu-04
 ### Actividad 4: potencia en decibeles
 

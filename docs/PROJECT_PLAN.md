@@ -1,7 +1,7 @@
 # Plan Maestro — Curso de introducción a Python para ASyS
 
 > Documento de referencia para organizar el trabajo a lo largo de múltiples sesiones.
-> Última actualización: 2026-04-16 (M01, M02, M03, M04 y M05 completados)
+> Última actualización: 2026-04-16 (M01–M09 completados — todos los módulos listos)
 
 ---
 
@@ -13,7 +13,7 @@ Tiene **tres ejes de trabajo**:
 
 | Eje | Qué | Estado actual |
 |-----|-----|---------------|
-| **A. Módulos** (M01–M09) | Notebooks expositivos que cubren Python de cero | M01 ✅, M02 ✅, M03 ✅, M04 ✅, M05 ✅; resto pendiente |
+| **A. Módulos** (M01–M09) | Notebooks expositivos que cubren Python de cero | M01 ✅, M02 ✅, M03 ✅, M04 ✅, M05 ✅, M06 ✅, M07 ✅, M08 ✅, M09 ✅ |
 | **B. Laboratorios** (L01–L08) | Notebooks entregables que aplican los módulos | Migración desde TP0–TP4 pendiente |
 | **C. Página de inicio** | README.md / index.md | Desactualizada; reescribir en Fase 4 |
 
@@ -82,10 +82,10 @@ Archivo `docs/AUDIT_REPORT.md` generado con hallazgos detallados, matriz de acci
 | 03 | M03_colecciones ✅ | Listas, tuplas, diccionarios, conjuntos, indexado, slicing | M02 |
 | 04 | M04_estructuras_de_control ✅ | if/elif/else, for, while, break, continue, comprensiones | M02, M03 |
 | 05 | M05_funciones ✅ | Definición, parámetros, return, scope, funciones lambda | M04 |
-| 06 | M06_clases_objetos | **NUEVO**: Clases, atributos, métodos, herencia básica | M05 |
-| 07 | M07_numpy | Arrays, operaciones vectorizadas, indexado, funciones matemáticas | M05 |
-| 08 | M08_matplotlib | Gráficos: plot, stem, subplot, formato, señales | M07 |
-| 09 | M09_sympy | Cálculo simbólico: derivadas, integrales, Laplace, series | M07 |
+| 06 | M06_clases_objetos ✅ | **NUEVO**: Clases, atributos, métodos, herencia básica | M05 |
+| 07 | M07_numpy ✅ | Arrays, operaciones vectorizadas, indexado, funciones matemáticas | M05, M06 |
+| 08 | M08_matplotlib ✅ | Gráficos: plot, stem, subplot, scatter, formato | M07 |
+| 09 | M09_sympy ✅ | Cálculo simbólico: símbolos, simplificación, `solve`, derivadas e integrales, `Piecewise`, `lambdify` | M07, M08 |
 
 > **Nota:** Se reorganizan los temas para respetar el principio de "no usar lo que no se presentó".
 > Se separa colecciones (listas/dicts) del tema de tipos básicos.
@@ -104,8 +104,10 @@ Archivo `docs/AUDIT_REPORT.md` generado con hallazgos detallados, matriz de acci
 3. ✅ M03 (colecciones) — completado 2026-04-16
 4. ✅ M04 (control) — completado 2026-04-16
 5. ✅ M05 (funciones) — completado 2026-04-16
-6. M06 (OOP, nuevo — escribir desde cero)
-7. M07, M08, M09 (NumPy, Matplotlib, SymPy — revisión y mejora)
+6. ✅ M06 (OOP, escrito desde cero) — completado 2026-04-16
+7. ✅ M07 (NumPy, reescrito a partir del viejo) — completado 2026-04-16
+8. ✅ M08 (Matplotlib, reescrito a partir del viejo) — completado 2026-04-16
+9. ✅ M09 (SymPy, reescrito a partir del viejo) — completado 2026-04-16
 
 ---
 
@@ -207,7 +209,7 @@ proyecto/
 |------|--------|----------------|
 | 0. Infraestructura | ✅ Completada | Sesión 1 |
 | 1. Auditoría | ✅ Completada | Sesión 2 |
-| 2. Módulos | 🟡 En curso (M01 ✅, M02 ✅, M03 ✅, M04 ✅, M05 ✅) | Sesiones 3–6 |
+| 2. Módulos | ✅ Completada (M01–M09) | Sesiones 3–6 |
 | 3. Laboratorios (8 labs, nueva estructura) | ⬜ Pendiente | Sesiones 7–11 |
 | 4. Página inicio | ⬜ Pendiente | Sesión 12 |
 

@@ -41,7 +41,7 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
     <tr>
       <td>1. Introducción a Google Colab</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/M01_introduccion_colab.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
-      <td rowspan="8"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP0.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td rowspan="9"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/TP0.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>2. Tipos de datos y variables</td>
@@ -60,16 +60,20 @@ Espero que estos tutoriales te sean útiles en tu aprendizaje y te ayuden a desa
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/M05_funciones.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
-      <td>6. Introducción a librerías. La librería Numpy</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/05_Introduccion_NumPy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td>6. Clases y objetos</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/M06_clases_objetos.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
-      <td>7. Generación de gráficos. Introducción a MatPlotLib</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/06_MatPlotLib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td>7. NumPy</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/M07_numpy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
-      <td>8. Cálculo simbólico. Introducción a SymPy</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/07_SymPy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td>8. Matplotlib</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/M08_matplotlib.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+    <tr>
+      <td>9. SymPy</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/M09_sympy.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
 </table>
