@@ -36,7 +36,7 @@ Si necesitás probar algo fuera de una celda de actividad, hacelo en una copia a
 - Que los gráficos tengan título, etiquetas en los ejes y grilla.
 - Si te trabás en un bloque, **no abandones**: seguí con los siguientes y volvé después. Los bloques son en buena medida independientes.
 
-> Las instrucciones completas de **entrega** (cómo descargar, renombrar y subir el archivo) y las fechas están en la página de inicio del curso, en la sección **Entrega**.
+
 
 %% md prov-02
 ## Preparación: imports
@@ -277,6 +277,22 @@ Por ejemplo, la tecla **"5"** genera la señal
 $$x(t) = \sin(2\pi \cdot 770 \cdot t) + \sin(2\pi \cdot 1336 \cdot t).$$
 
 El oído humano percibe los dos tonos mezclados como el sonido característico del marcado. En el otro extremo de la línea, un circuito (o un programa) detecta las dos frecuencias y deduce qué tecla se apretó.
+
+### Contexto: frecuencia de muestreo
+
+Una computadora no guarda una señal continua en sentido matemático: sólo puede almacenar una secuencia de **valores tomados a intervalos regulares**. La cantidad de valores que registramos por segundo se llama **frecuencia de muestreo**, se suele nombrar `fs` (del inglés *sampling frequency*) y se mide en Hz.
+
+Por ejemplo, `fs = 8000` Hz significa que tomamos 8000 muestras por segundo, una cada $1/8000 = 125\ \mu\text{s}$. Ese valor es el estándar histórico de la telefonía digital: alcanza para representar con fidelidad la voz humana y los tonos DTMF.
+
+Para armar el eje de tiempos `t` de una señal de duración `duracion` muestreada a `fs`:
+
+```python
+t = np.linspace(0, duracion, int(duracion * fs))
+```
+
+`duracion * fs` es la cantidad total de muestras; la envolvemos en `int(...)` porque `linspace` exige un entero.
+
+Este concepto lo vamos a retomar con más profundidad en un laboratorio más adelante; por ahora alcanza con esta idea operativa.
 
 ### Contexto: valor RMS
 
