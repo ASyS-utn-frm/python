@@ -28,8 +28,33 @@ import base64
 # Patrón del delimitador de celda: %% tipo id
 CELL_DELIM = re.compile(r'^%%\s+(md|code)\s+(\S+)\s*$')
 
-# Ruta al logo UTN (relativo al directorio del proyecto)
-LOGO_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'resources', 'logoUTN.jpg')
+# Rutas al logo UTN y a la plantilla de encabezado
+PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
+LOGO_PATH = os.path.join(PROJECT_ROOT, 'resources', 'logoUTN.jpg')
+HEADER_TEMPLATE_PATH = os.path.join(PROJECT_ROOT, 'src', '_header.md')
+
+# Cache para la plantilla expandida (se calcula una vez por corrida)
+_HEADER_EXPANDED = None
+
+
+def get_expanded_header():
+    """Devuelve la plantilla de encabezado con el logo UTN embebido como base64.
+
+    La plantilla vive en src/_header.md con un placeholder {{LOGO_B64}}.
+    El base64 se calcula desde resources/logoUTN.jpg cada vez que corre
+    md2nb.py (cacheado por proceso).
+    """
+    global _HEADER_EXPANDED
+    if _HEADER_EXPANDED is not None:
+        return _HEADER_EXPANDED
+
+    with open(HEADER_TEMPLATE_PATH, 'r', encoding='utf-8') as f:
+        template = f.read()
+    with open(LOGO_PATH, 'rb') as f:
+        logo_b64 = base64.b64encode(f.read()).decode('ascii')
+
+    _HEADER_EXPANDED = template.replace('{{LOGO_B64}}', logo_b64)
+    return _HEADER_EXPANDED
 
 # Plantilla de notebook
 NOTEBOOK_TEMPLATE = {
@@ -123,6 +148,16 @@ def build_cell(cell_type, cell_id, lines, prefix):
 
     full_id = f"{prefix}-{cell_id}"
     role = determine_role(cell_id)
+
+    # Directiva @header: expandir a la plantilla con logo embebido
+    if cell_type == 'md' and len(lines) == 1 and lines[0].strip() == '@header':
+        expanded = get_expanded_header()
+        # Preservar saltos de línea como Jupyter los guarda
+        exp_lines = expanded.split('\n')
+        # Evitar línea final vacía que agrega split cuando el texto termina en \n
+        if exp_lines and exp_lines[-1] == '':
+            exp_lines.pop()
+        lines = exp_lines
 
     # Convertir líneas a formato source (cada línea termina en \n excepto la última)
     source = []

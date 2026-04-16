@@ -11,21 +11,100 @@ para incorporar los carryovers pendientes y luego moverlos a "✅ Aplicados".
 
 ## ⬜ Pendientes
 
-### Origen: renombres (tutoriales → módulos) → Destino: Fase 4 (página de inicio)
+### Origen: tooling `@header` → Destino: todos los `src/*.md`
 
-- El link del M01 en `README.md` e `index.md` ya se actualizó (apunta a
-  `M01_introduccion_colab.ipynb`). Los otros 6 links siguen apuntando a los
-  nombres viejos (`02_Ttipos_de_datos.ipynb`, etc.).
-- **A medida que se reescriba cada módulo (M02–M09)**: actualizar su link
-  correspondiente en README/index y borrar el `.ipynb` viejo. Hacerlo en el
-  mismo commit que el rename evita tener links rotos en la página pública.
-- **Fase 4 hará el overhaul completo** del README/index: reemplazar
-  "tutoriales" por "módulos", reorganizar tabla, eliminar fechas viejas,
-  actualizar autor/introducción para tono publicable.
+- El tooling (`md2nb.py` / `nb2md.py`) ya soporta la directiva `@header`:
+  en `src/*.md` la celda de encabezado se escribe solo como `@header` y
+  `md2nb.py` expande al convertir usando `src/_header.md` +
+  `resources/logoUTN.jpg` (base64 calculado al vuelo). El `.ipynb`
+  generado queda idéntico al actual (logo embebido).
+- **Pendiente:** cuando se reescriba cada `src/*.md`, colapsar el bloque
+  HTML del encabezado (`<center>... base64 ...</center>`) a una sola
+  línea `@header`. Esto reduce drásticamente el tamaño de la fuente y
+  unifica el texto al nuevo "Departamento de Ingeniería en Tecnologías
+  Electrónicas" (ver `docs/FORMATO_CELDAS.md` §3).
+- No hay migración masiva programada: se aplica oportunísticamente cada
+  vez que se toque un `src/*.md`.
+
+### (Resuelto 2026-04-16) Overhaul de README/index
+
+El overhaul completo de Fase 4 se adelantó (ver "Aplicados"). Todos
+los links de los módulos apuntan al nombre nuevo `MNN_*.ipynb`, y se
+reemplazó "tutoriales" por "módulos", se añadió la sección
+**Laboratorios** con L00, se reformuló **Entrega** y se eliminaron
+las fechas de entrega / avisos rojos. Queda como seguimiento:
+
+- Cuando se escriba cada laboratorio nuevo (L01–L08), agregar su fila
+  en la tabla "Laboratorios" del README/index con el link Colab
+  correspondiente.
+- A medida que cada Lx reemplace a un TPn, borrar la fila
+  correspondiente de "Material de ediciones anteriores".
 
 ---
 
 ## ✅ Aplicados
+
+- **2026-04-16** — README.md / index.md: **overhaul completo (Fase 4
+  adelantada)**. Reescritura con tono publicable: (a) título ahora es
+  "Curso introductorio de Python para Análisis de Señales y Sistemas";
+  (b) intro reemplaza "tutoriales" por "módulos" y menciona
+  explícitamente el Departamento de Ingeniería en Tecnologías
+  Electrónicas (estudiantes con poca o ninguna experiencia previa);
+  (c) secciones separadas **Módulos** y **Laboratorios**, la segunda
+  con L00 visible y una nota sobre L01–L08 en desarrollo; (d) TP1–TP4
+  quedan bajo la subsección "Material de ediciones anteriores" con
+  nota de que se van a reemplazar; (e) sección **Entrega** nueva y
+  detallada (6 pasos: resolver en Colab → respetar celdas → reiniciar y
+  correr → descargar .ipynb → renombrar con apellido → subir al
+  campus), con advertencia destacada de que solo se modifican las
+  celdas `# TU CÓDIGO AQUÍ`; (f) se eliminaron la fecha de entrega del
+  TP4 y el aviso rojo de "nueva metodología"; las fechas van solo al
+  campus virtual; (g) autor reescrito sobrio. `index.md` sincronizado
+  con `README.md` con `cp`. `TP0.ipynb` y `src/TP0.md` se conservan
+  en el repo por ahora como insumo para L1.
+
+- **2026-04-16** — L00 actualizado según lineamiento "entrega en
+  README, aviso explícito en labs": (a) se reemplazó la sección corta
+  "## Entrega" por un bloque **## IMPORTANTE: qué celdas podés
+  modificar** que explica que solo se modifican las celdas con
+  `# TU CÓDIGO AQUÍ` y por qué (corrección automática celda por celda);
+  (b) el cierre (prov-15) ahora remite a la página del curso para las
+  instrucciones de entrega y se agregó un item de checklist "no
+  modifiqué ninguna celda fuera de las de actividad"; (c) también se
+  corrigió la abreviatura "telecom" → "telecomunicaciones" en prov-01
+  (nueva memoria `feedback_no_abreviaturas`). Notebook regenerado y
+  validado con `jupyter nbconvert --execute`.
+
+- **2026-04-16** — L00 (`L00_practica_python`) escrito desde cero como
+  **primer laboratorio entregable** del curso. Decisión con el usuario:
+  se agrega L00 a la estructura original de 8 labs (ahora 9: L00 + L01–L08).
+  L00 practica todo lo visto en M01–M09 con **ejercicios nuevos** que no
+  duplican los de los módulos. 8 bloques, uno por módulo: (1) longitud
+  de onda `λ = c/f` para AM/FM/Wi-Fi [M02], (2) diccionario de notas
+  musicales → frecuencias de una melodía [M03], (3) clasificar
+  frecuencias en bandas HF/VHF/UHF con `if/elif` + comprensión filtro
+  [M04], (4) funciones `fc_rc`, `ganancia_db`, `ganancia_total_db` con
+  composición [M05], (5) clase `Bateria` con `energia_wh` y `autonomia`
+  [M06], (6) tono DTMF tecla "5" + cálculo RMS [M07], (7) tres señales
+  en subplots (exp creciente, tren de pulsos con `stem`, senoidal
+  amortiguada) [M08], (8) despejar `C` del filtro RC con `sp.solve` +
+  `.subs` + `.evalf` [M09]. Integrador final: **detector DTMF por MSE**
+  (sin Fourier) — el alumno recibe un tono misterioso generado con
+  `np.random.default_rng(seed=42)`, compara con los 12 candidatos y
+  elige el de menor error cuadrático. Tono super explicativo en cada
+  enunciado (qué se pide + qué herramienta usar + conceptos del dominio
+  como DTMF, RMS, bandas RF, dB de tensión explicados desde cero).
+  Decisiones clave: (a) nomenclatura `L00_*` siguiendo convención
+  `LNN_*` de CLAUDE.md; (b) no se mete en muestreo/`dt`/Nyquist (eso
+  queda para L1); (c) sí usa `linspace`/`plot`/`stem` pero sin entrar
+  en la reflexión continuo↔discreto. Archivos: `src/L00_practica_python.md`
+  (34 celdas), notebook generado con `md2nb.py`, y `rubrics/L00_rubric.md`
+  con solución de referencia y puntajes (total 100 pts + bonus 5 pts).
+  Notebook validado con `jupyter nbconvert --execute` (corre limpio)
+  y soluciones de referencia validadas con un script aparte.
+  `PROJECT_PLAN.md` actualizado: la transición TP0→L1 ahora es
+  TP0→L0+L1, y el rol de L1 se aclaró como "cierre **conceptual**"
+  (vs. "cierre integrador" que pasó a L0).
 
 - **2026-04-16** — M09 (`M09_sympy`) reescrito a partir del
   `07_SymPy` viejo. Secciones: `import sympy as sy` + `init_printing`

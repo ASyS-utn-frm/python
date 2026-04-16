@@ -124,7 +124,12 @@ def notebook_to_markdown(nb_path, output_path=None):
 
         # Escribir contenido
         source = ''.join(cell.get('source', []))
-        lines.append(source)
+        # Encabezado con imagen embebida → colapsar a directiva @header
+        # (el contenido real vive en src/_header.md y md2nb.py lo expande al convertir)
+        if role == 'header' and 'base64,' in source:
+            lines.append('@header')
+        else:
+            lines.append(source)
         lines.append('')
 
     result = '\n'.join(lines)

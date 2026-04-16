@@ -84,6 +84,18 @@ Esto permite identificar unívocamente cualquier celda en cualquier notebook.
 - Logo de UTN y título del notebook
 - Solo al inicio del notebook
 - **El alumno NO modifica estas celdas**
+- En `src/*.md` se escribe como una directiva corta:
+
+  ```
+  %% md hdr-01
+  @header
+  ```
+
+  `md2nb.py` expande `@header` usando la plantilla `src/_header.md` y
+  el logo `resources/logoUTN.jpg` (base64 calculado al convertir). En el
+  `.ipynb` generado el logo queda embebido igual que antes — Colab no
+  necesita acceso al archivo binario. `nb2md.py` colapsa automáticamente
+  a `@header` cualquier celda header con base64 al extraer un notebook.
 
 ### `provided` — Material provisto
 - Explicaciones teóricas (markdown)

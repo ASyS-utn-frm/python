@@ -1,7 +1,7 @@
 # Plan Maestro — Curso de introducción a Python para ASyS
 
 > Documento de referencia para organizar el trabajo a lo largo de múltiples sesiones.
-> Última actualización: 2026-04-16 (M01–M09 completados — todos los módulos listos)
+> Última actualización: 2026-04-16 (M01–M09 + L00 completados)
 
 ---
 
@@ -14,7 +14,7 @@ Tiene **tres ejes de trabajo**:
 | Eje | Qué | Estado actual |
 |-----|-----|---------------|
 | **A. Módulos** (M01–M09) | Notebooks expositivos que cubren Python de cero | M01 ✅, M02 ✅, M03 ✅, M04 ✅, M05 ✅, M06 ✅, M07 ✅, M08 ✅, M09 ✅ |
-| **B. Laboratorios** (L01–L08) | Notebooks entregables que aplican los módulos | Migración desde TP0–TP4 pendiente |
+| **B. Laboratorios** (L00–L08) | Notebooks entregables que aplican los módulos | L00 ✅, L01–L08 pendientes |
 | **C. Página de inicio** | README.md / index.md | Desactualizada; reescribir en Fase 4 |
 
 Y un **eje transversal de infraestructura**:
@@ -125,11 +125,12 @@ Archivo `docs/AUDIT_REPORT.md` generado con hallazgos detallados, matriz de acci
 - **Cada ejercicio indica qué conceptos de Python necesita**
 - **Rúbrica asociada**: archivo en `rubrics/` para corrección automatizada
 
-### Plan — 8 laboratorios
+### Plan — 9 laboratorios (L00 + L01–L08)
 
 | Lab | Tema | Rol didáctico |
 |-----|------|---------------|
-| L1 | Python aplicado a señales | Cierre integrador de los tutoriales. Planta la bandera del hilo continuo↔discreto (muestras vs. señal, rol de `dt`, diferencia entre graficar "denso" y muestrear). |
+| L0 ✅ | Práctica integradora de Python | **Primer entregable del curso.** Ejercita todas las piezas de M01–M09 con escenarios nuevos (distintos a los de los módulos). Contextos de electrónica y telecomunicaciones (longitud de onda, notas musicales, bandas de radio, filtros RC, baterías, DTMF). Cierra con un mini-proyecto integrador (detector DTMF por MSE, sin Fourier). |
+| L1 | Python aplicado a señales | Cierre conceptual de los módulos. Planta la bandera del hilo continuo↔discreto (muestras vs. señal, rol de `dt`, diferencia entre graficar "denso" y muestrear). |
 | L2 | Variable compleja aplicada | Fracciones simples de funciones racionales; evaluación de módulo y fase sobre eje `jω` **y** sobre la circunferencia unitaria. Preludio común de Laplace y Z. |
 | L3 | Convolución | Conservar el enfoque tangible del lab actual (favorito del docente). Graduar dificultad inicial. |
 | L4 | Fourier de tiempo continuo | Serie + transformada en un mismo lab. Hacer explícita la tensión "lo que pido es continuo, lo que calculo es discreto". |
@@ -152,7 +153,7 @@ Archivo `docs/AUDIT_REPORT.md` generado con hallazgos detallados, matriz de acci
 ### Mapa de transición desde los TPs actuales
 | TP actual | Destino |
 |-----------|---------|
-| TP0 (Python básico) | → L1 (Python aplicado a señales) — reenfocar hacia señales |
+| TP0 (Python básico) | → L0 (Práctica integradora, escenarios nuevos) + L1 (Python aplicado a señales, foco continuo↔discreto) |
 | TP1 (Variable compleja) | → L2 (Variable compleja aplicada) — reorientar hacia fracciones simples y evaluación sobre jω / círculo unitario |
 | TP2 (Convolución) | → L3 — conservar, pulir |
 | TP3 (Fourier continuo) | → L4 |
@@ -210,7 +211,7 @@ proyecto/
 | 0. Infraestructura | ✅ Completada | Sesión 1 |
 | 1. Auditoría | ✅ Completada | Sesión 2 |
 | 2. Módulos | ✅ Completada (M01–M09) | Sesiones 3–6 |
-| 3. Laboratorios (8 labs, nueva estructura) | ⬜ Pendiente | Sesiones 7–11 |
-| 4. Página inicio | ⬜ Pendiente | Sesión 12 |
+| 3. Laboratorios (L00 + L01–L08) | 🔶 En curso (L00 ✅) | Sesiones 7–11 |
+| 4. Página inicio | ✅ Overhaul aplicado (se irá actualizando con cada Lx nuevo) | Hecho 2026-04-16 |
 
 > Las sesiones son orientativas. Cada una puede subdividirse según la complejidad encontrada.
