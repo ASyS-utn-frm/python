@@ -36,8 +36,6 @@ Si necesitás probar algo fuera de una celda de actividad, hacelo en una copia a
 - Que los gráficos tengan título, etiquetas en los ejes y grilla.
 - Si te trabás en un bloque, **no abandones**: seguí con los siguientes y volvé después. Los bloques son en buena medida independientes.
 
-
-
 %% md prov-02
 ## Preparación: imports
 
@@ -402,7 +400,7 @@ Llegaste al final. En este ejercicio se combinan varios bloques anteriores.
 
 Te pasamos un array `x_misterio` que contiene las muestras de **un tono DTMF desconocido**: alguna de las 12 teclas del teclado telefónico, pero no sabemos cuál. Tu tarea es **identificarla**.
 
-### Idea del método (sin Fourier)
+### Idea del método
 
 Para cada una de las 12 teclas posibles:
 
@@ -490,7 +488,7 @@ Escribí el código que identifique qué tecla es `x_misterio`. Una estructura p
 %% md prov-15
 ## Cierre
 
-Si llegaste hasta acá con todas las celdas corriendo, estás listo para entrar al Laboratorio 1, donde vamos a profundizar qué significa **representar una señal en la computadora** (muestras vs. señal continua, el rol de `dt`).
+Si llegaste hasta acá con todas las celdas corriendo, estás listo para entrar al Laboratorio 1.
 
 Antes de entregar, revisá esta checklist rápida:
 
@@ -498,7 +496,5 @@ Antes de entregar, revisá esta checklist rápida:
 - [ ] Los valores numéricos que imprimo son razonables (no hay infinitos, ni `NaN`, ni errores de unidades).
 - [ ] Todos los gráficos tienen título, etiquetas en los ejes y grilla.
 - [ ] No modifiqué ninguna celda fuera de las de actividad.
-
-Las instrucciones de descarga, renombre y subida al campus virtual están en la página de inicio del curso.
 
 > **Si algo quedó incompleto:** entregá igual. Lo parcial bien hecho suma más que lo completo hecho a las apuradas.
