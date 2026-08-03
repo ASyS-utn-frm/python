@@ -1,3 +1,18 @@
 # Material de ediciones anteriores (TP0–TP4), conservado solo localmente
 # como insumo para escribir los laboratorios L01–L07.
 _legacy/
+
+# Repo PRIVADO de fuentes de laboratorio (clonado acá adentro).
+# Contiene los .lab.md —que llevan la solución embebida— y los notebooks
+# de solución. NO puede publicarse: este repo es público.
+_fuente/
+
+.DS_Store
+
+# Configuración local del editor: apunta a un intérprete con ruta absoluta
+# de esta máquina, no tiene sentido publicarla.
+.vscode/
+
+
+# Estado local de Claude Code (memoria de proyecto, configuración de sesión).
+.claude/

@@ -5,6 +5,31 @@ en todos los notebooks del curso.
 
 ---
 
+## 0. Criterio rector
+
+Estos notebooks son **documentos pedagógicos**: su único producto es la comprensión
+del alumno. Por lo tanto, **la calidad de la redacción no es un acabado, es la
+función del material**. Un notebook con el código correcto, los `cell_id` bien
+puestos y los gráficos prolijos, pero con explicaciones vagas, vocabulario impreciso
+o afirmaciones no verificadas, **no cumple su objetivo**: falló en lo único que tenía
+que hacer.
+
+De ahí el orden de prioridades al escribir o revisar:
+
+1. **Que se entienda y que sea exacto** — §1 y §1 bis. Si algo hay que rehacer, se
+   rehace por acá.
+2. Que el recorrido didáctico funcione — dificultad ascendente, nada de conceptos
+   huérfanos, ejercicios tangibles.
+3. Que valide contra el contrato técnico — `cell_id`, placeholders, compilación.
+4. Que el formato sea consistente — estructura de celdas, tablas, separadores.
+
+Los puntos 3 y 4 son condiciones necesarias y verificables por script: si fallan, el
+material no se puede corregir ni publicar. Pero cumplirlos no aporta ni un punto de
+calidad — solo habilitan que el trabajo del punto 1 llegue al alumno. Cuando el
+tiempo alcance para una sola revisión más, va sobre el punto 1.
+
+---
+
 ## 1. Tono y voz
 
 ### Principio general
@@ -19,7 +44,7 @@ sin ser condescendiente ni innecesariamente formal.
 - **Presentar el término en inglés** la primera vez que aparece, entre paréntesis:
   > Una lista (*list*) es una colección ordenada de elementos.
 - **No asumir conocimientos previos** de programación. Cada concepto se presenta
-  desde cero en el tutorial correspondiente
+  desde cero en el módulo correspondiente
 - **Ser preciso sin ser exhaustivo**: dar la explicación suficiente para que el
   alumno entienda y pueda usar el concepto, no un tratado completo
 - **Usar analogías concretas** de la vida cotidiana o de la ingeniería cuando ayuden
@@ -41,9 +66,92 @@ sin ser condescendiente ni innecesariamente formal.
 
 ---
 
-## 2. Estructura de un tutorial
+## 1 bis. Registro y precisión del vocabulario
 
-Cada tutorial sigue esta estructura general:
+El tono cercano de la sección anterior **no habilita el coloquialismo**. El registro
+es *semiformal y técnicamente preciso*: se conserva el voseo y la cercanía, pero se
+nombra cada cosa con su término correcto. El destinatario es un alumno que recién
+empieza, y el vocabulario preciso es parte de lo que tiene que aprender: si el
+material lo nombra mal, no tiene de dónde sacar la referencia correcta.
+
+### Coloquialismos a evitar
+
+| En vez de | Escribir |
+|-----------|----------|
+| "un eje chiquito", "de juguete" | "un eje reducido", "de prueba" |
+| "ese es todo el truco" | "esa es toda la técnica" |
+| "quedarse con un pedazo" | "extraer un tramo / fragmento" |
+| "cambia de golpe" | "cambia de manera instantánea" |
+| "al rato vuelve" | "un tiempo después regresa" |
+| "un poquito más rápido" | "levemente más rápido" |
+| "apretá play" | "presioná el botón de reproducción" |
+| "dar vuelta el array" | "invertir el array" |
+| "el gráfico sale mal" | "el gráfico resulta incorrecto" |
+| "cambiar un renglón" | "cambiar una sola línea" |
+| "te dejamos una función" | "se provee una función" |
+| "estas celdas no se tocan" | "estas celdas no deben modificarse" |
+| "arranca en 0" | "comienza en 0" |
+| "que no se pase de 1" | "que no supere 1" |
+| "define dos cosas" | "define dos elementos / factores / recursos" |
+
+### Término técnico exacto
+
+- **muestra** (no "punto") para los valores de una señal muestreada.
+- **instante** para los elementos de un eje de tiempo. Un eje tiene *instantes*;
+  una señal tiene *muestras*. No llamar "puntos" a ninguno de los dos.
+- **índice** (no "posición") para ubicar un elemento de un array.
+- **longitud** (no "largo") de un array.
+- **frecuencia de muestreo** para `fs`, expresada en muestras por segundo.
+- **reflejar** (no "invertir") para $x(-t)$; **invertir** queda para dar vuelta un
+  array o para la simetría respecto del eje horizontal.
+- **anular** (no "apagar") para el resultado de multiplicar por cero.
+- Anglicismos técnicos en cursiva la primera vez: *slicing*, *clipping*, *string*.
+
+### Definir, no solo nombrar
+
+Introducir un objeto por su nombre no lo define. La prueba es preguntarse si el
+alumno podría reconstruir el objeto a partir de la frase.
+
+**Mal:**
+> **`t`** es el eje de tiempo, en segundos.
+
+**Bien:**
+> **`t`** es lo que llamamos el eje de tiempo, pero conviene precisar qué es
+> exactamente: un array que contiene **instantes medidos en segundos**, y no
+> valores de ninguna señal. Contiene 1401 instantes entre −2 s y 5 s, separados
+> 5 ms. Una señal queda entonces representada por **dos arrays de la misma
+> longitud** que se leen en paralelo: `t` dice *en qué instante*, y el otro dice
+> *cuánto vale* la señal en ese instante.
+
+Reglas prácticas que se desprenden:
+
+- Dar siempre los **números concretos** (cantidad, paso, rango, unidades) en lugar
+  de adjetivos vagos como "denso", "grueso" o "chico".
+- Justificar cuantitativamente las decisiones de diseño: no "el eje es demasiado
+  grueso para audio", sino "un período de 440 Hz dura 2,3 ms y el paso del eje es
+  de 5 ms, así que no entra ni una oscilación entre dos instantes".
+- Nombrar correctamente la **procedencia** de cada herramienta (`Audio` es de
+  IPython, no "de Colab").
+
+### Verificar antes de afirmar
+
+Toda afirmación cuantitativa y toda referencia cruzada se comprueban, no se estiman:
+
+- Los números que aparecen en el texto (frecuencias, porcentajes, cantidades de
+  muestras, resultados de una cuenta) se corren en un script antes de escribirlos.
+- Las afirmaciones del tipo "esto no se presenta en el Módulo 7" se verifican con
+  `grep` sobre `src/M*.md`.
+- Cuidado especial con los resultados que tienen dos lecturas posibles. Ejemplo
+  real: en un batido de 440 y 443 Hz la envolvente $\cos(2\pi\frac{\Delta f}{2}t)$
+  tiene frecuencia 1,5 Hz, pero se oyen **3** pulsaciones por segundo porque el
+  volumen sigue el valor absoluto. Decir "la envolvente pulsa 3 veces por segundo"
+  es incorrecto; hay que distinguir las dos cosas.
+
+---
+
+## 2. Estructura de un módulo
+
+Cada módulo sigue esta estructura general:
 
 ```
 1. Encabezado (logo + título)
@@ -69,16 +177,52 @@ Cada concepto nuevo sigue el ciclo:
 
 ```
 1. Encabezado (logo + título)
-2. Objetivos del TP
-3. Imports y configuración inicial
-4. Bloques de ejercicios (orden ascendente de dificultad):
+2. Objetivos del laboratorio
+3. Reglas de entrega (qué celdas se pueden modificar)
+4. Preparación: imports y configuración inicial, presentados por una celda de texto
+5. Bloques de ejercicios (orden ascendente de dificultad):
    a. Explicación del contexto / teoría necesaria
    b. Ejemplo resuelto (código provisto que el alumno ejecuta)
-   c. Enunciado del ejercicio (celda enu-)
-   d. Celda de actividad (celda act-)
-   e. [Opcional] Verificación automática
-5. [Opcional] Ejercicio integrador final
+   c. Enunciado del ejercicio (celda ejN-enunciado)
+   d. Celda de actividad (celda ejN-code)
+   e. Pregunta de análisis + celda de respuesta (ejN-pregunta / ejN-respuesta)
+6. [Opcional] Ejercicio integrador final
+7. Checklist de entrega y cierre
 ```
+
+### Regla: ninguna celda aparece sin explicación
+
+**Toda celda que el alumno ve tiene que estar justificada por qué está ahí.**
+Esto vale especialmente para las celdas de código **provistas** (imports,
+funciones auxiliares, ejes de tiempo, generadores de datos): cada una debe venir
+precedida por una celda de texto que explique qué hace, por qué aparece en ese
+punto del recorrido y qué se espera del alumno (habitualmente, solo ejecutarla).
+
+No alcanza con poner la explicación como comentario adentro del código: el
+alumno que recorre el notebook leyendo los textos se saltea los comentarios, y
+la celda le queda descolgada.
+
+Mal:
+
+```
+[markdown] ## IMPORTANTE: qué celdas podés modificar
+[code]     import numpy as np ...        ← aparece de la nada
+[markdown] ## Sección A
+```
+
+Bien:
+
+```
+[markdown] ## Preparación
+           Ejecutá la celda que sigue una sola vez. Además de las librerías,
+           define `t`, el eje de tiempo que usan todas las señales del lab...
+[code]     import numpy as np ...
+[markdown] ## Sección A
+```
+
+Verificación rápida sobre un `.ipynb` generado: toda celda de código cuyo
+`cell_id` no matchee `ejN-code` debe tener una celda markdown inmediatamente
+antes.
 
 ### Niveles de dificultad
 
@@ -133,7 +277,7 @@ Usar blockquotes con prefijo:
 
 > **Importante:** No olvides ejecutar la celda de imports antes de continuar.
 
-> **Recordá:** Este concepto lo vimos en el Tutorial 3, sección 2.1.
+> **Recordá:** Este concepto lo vimos en el Módulo 3, sección 2.1.
 ```
 
 ---
@@ -165,7 +309,7 @@ import sympy as sp
 ### Comentarios en código de ejemplo
 - Explicar **qué** hace cada bloque significativo
 - No comentar lo obvio
-- En tutoriales iniciales, ser más generoso con los comentarios
+- En los primeros módulos, ser más generoso con los comentarios
 
 ```python
 # Bien: explica el propósito
@@ -183,7 +327,7 @@ señal = np.sin(2 * np.pi * 1000 * t)  # calculamos el seno
   ```python
   print(f"El módulo de z es: {abs(z):.2f}")
   ```
-- En tutoriales tempranos (antes de presentar f-strings), usar la forma simple:
+- En los primeros módulos (antes de presentar f-strings), usar la forma simple:
   ```python
   print("El módulo de z es:", abs(z))
   ```
@@ -215,26 +359,79 @@ plt.show()
 
 ---
 
+## 6 bis. Audio
+
+Varios laboratorios reproducen señales con `Audio`, de `IPython.display`. Hay
+tres reglas que **no son opcionales**: si se rompen, el notebook parece
+funcionar pero enseña algo falso, o directamente falla en la celda del alumno.
+
+### Siempre `normalize=False`
+
+```python
+Audio(senal, rate=fs, normalize=False)
+```
+
+`Audio` trae `normalize=True` por defecto, y eso **reescala la señal para que
+su pico llegue al tope del rango disponible**. La consecuencia es que la
+amplitud del array deja de tener efecto audible: una sinusoide de amplitud `0.5`
+y una de `0.05` suenan exactamente igual de fuerte. Cualquier ejercicio o
+pregunta de análisis que hable de volumen queda invalidado en silencio, sin
+error ni advertencia.
+
+### Toda señal audible va acotada a `[-1, 1]` **por construcción**
+
+Con `normalize=False`, un solo valor fuera de rango aborta la celda con:
+
+```
+ValueError: Audio data must be between -1 and 1 when normalize=False
+```
+
+No recorta ni distorsiona: **falla**. Por eso la cota tiene que salir de cómo
+está armada la señal, no de la confianza en que los números den bien. Al sumar
+$n$ señales de amplitud 1, dividir por $n$; al usar una envolvente, elegir la
+amplitud del tono por debajo de 1. Amplitudes habituales: `0.5` o `0.6`.
+
+Verificar el pico antes de dar el lab por terminado:
+
+```python
+print(abs(senal).max())   # tiene que dar ≤ 1
+```
+
+### El `Audio(...)` va como última expresión de la celda
+
+El reproductor aparece porque el notebook muestra el resultado de la última
+expresión. Si después hay un `print()` o un `plt.show()`, no se ve nada. En
+celdas con gráfico y sonido, el `Audio` va al final.
+
+### Al escribir el enunciado
+
+Nombrar la procedencia (`Audio` no es de NumPy ni de Matplotlib, viene de
+IPython) y advertir que el reproductor **no arranca solo**: hay que apretar
+*play*. Agregar siempre que quien trabaje en un equipo sin audio puede resolver
+los ejercicios a partir del gráfico.
+
+---
+
 ## 7. Regla de oro: no usar lo que no se presentó
 
 Antes de usar un concepto, función o construcción sintáctica en un notebook,
-verificar que se haya presentado en un tutorial anterior o en el mismo notebook.
+verificar que se haya presentado en un módulo anterior o en el mismo notebook.
 
-### Orden de dependencias de los tutoriales
+### Orden de dependencias de los módulos
 
 ```
-T01 (Colab) → T02 (Tipos) → T03 (Colecciones) → T04 (Control)
+M01 (Colab) → M02 (Tipos) → M03 (Colecciones) → M04 (Control)
                                                        ↓
-T09 (SymPy) ← T08 (Matplotlib) ← T07 (NumPy) ← T05 (Funciones)
+M09 (SymPy) ← M08 (Matplotlib) ← M07 (NumPy) ← M05 (Funciones)
                                                        ↓
-                                                  T06 (OOP)
+                                                  M06 (OOP)
 ```
 
-Si un tutorial necesita algo de un tutorial posterior, hay dos opciones:
-1. **Mover** el concepto al tutorial donde se necesita
-2. **Dar una explicación mínima** inline con referencia al tutorial completo:
+Si un módulo necesita algo de un módulo posterior, hay dos opciones:
+1. **Mover** el concepto al módulo donde se necesita
+2. **Dar una explicación mínima** inline con referencia al módulo completo:
    > Usamos `range()` para generar una secuencia de números. Veremos más
-   > detalles en el Tutorial 4, por ahora alcanza con saber que
+   > detalles en el Módulo 4, por ahora alcanza con saber que
    > `range(5)` genera los números del 0 al 4.
 
 ---
@@ -246,8 +443,16 @@ Antes de dar por terminado un notebook, verificar:
 - [ ] Todas las celdas tienen ID y rol asignado
 - [ ] No se usan conceptos no presentados previamente
 - [ ] El tono es consistente (tuteo con vos, cercano pero preciso)
+- [ ] No quedan coloquialismos de la tabla de la sección 1 bis
+- [ ] Cada objeto nuevo está **definido**, no solo nombrado (sección 1 bis)
+- [ ] Los términos técnicos son los exactos (instante/muestra, índice, longitud)
+- [ ] Los números del texto se verificaron corriéndolos, y las referencias a otros
+      módulos con `grep` sobre `src/`
 - [ ] Las ecuaciones LaTeX renderizan correctamente
 - [ ] Los gráficos tienen ejes etiquetados, título y grid
+- [ ] Si hay audio: todos los `Audio(...)` llevan `normalize=False`, van como
+      última expresión de su celda, y ninguna señal supera 1 en valor absoluto
+      (sección 6 bis)
 - [ ] Los imports están al inicio
 - [ ] Las celdas de actividad tienen `# TU CÓDIGO AQUÍ`
 - [ ] Los enunciados son claros y autocontenidos

@@ -31,7 +31,7 @@ Para abrir un notebook, hacé clic en el botón **Open in Colab** de la tabla co
 
 En los **módulos** podés modificar el código libremente: la idea es que experimentes para fijar los conceptos.
 
-En los **laboratorios** vas a encontrar celdas marcadas con el comentario `# TU CÓDIGO AQUÍ`. Esas son las únicas celdas que debés modificar (ver la sección **Entrega**).
+En los **laboratorios** vas a encontrar celdas marcadas con el comentario `# Tu código aquí` y celdas de respuesta con el texto `*(Escribí tu respuesta acá)*`. Esas son las únicas celdas que debés modificar (ver la sección **Entrega**).
 
 
 # Módulos
@@ -89,7 +89,9 @@ En los **laboratorios** vas a encontrar celdas marcadas con el comentario `# TU 
 
 # Laboratorios
 
-El Laboratorio 0 cierra la parte introductoria de Python y es el primer entregable del curso. Los laboratorios siguientes (L01 a L08) se publican a medida que se avanza con los temas de la asignatura.
+El Laboratorio 0 cierra la parte introductoria de Python y es el primer entregable del curso. Los laboratorios siguientes (L04 y L05) se publican a medida que se avanza con los temas de la asignatura.
+
+Cada laboratorio combina **celdas de código**, donde escribís la solución, y **preguntas de análisis**, donde explicás con tus palabras qué observaste. Las dos cosas se corrigen.
 
 <table>
   <thead>
@@ -101,7 +103,19 @@ El Laboratorio 0 cierra la parte introductoria de Python y es el primer entregab
   <tbody>
     <tr>
       <td>Laboratorio 0 — Práctica integradora de Python</td>
-      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/L00_practica_python.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L00_practica_python.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+    <tr>
+      <td>Laboratorio 1 — Señales y operaciones</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L01_senales_y_operaciones.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+    <tr>
+      <td>Laboratorio 2 — Convolución</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L02_convolucion.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+    <tr>
+      <td>Laboratorio 3 — Muestreo</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L03_muestreo.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
   </tbody>
 </table>
@@ -119,7 +133,7 @@ Abrí el laboratorio con el link **Open in Colab** correspondiente. Autenticate 
 
 ### 2. Respetar qué celdas se pueden modificar
 
-> **IMPORTANTE.** Solo se deben completar las celdas marcadas con el comentario `# TU CÓDIGO AQUÍ`. El resto de las celdas (enunciados, explicaciones, ejemplos provistos, encabezados, logos) **no se modifican**.
+> **IMPORTANTE.** Solo se deben completar las celdas marcadas con el comentario `# Tu código aquí` y las celdas de respuesta, que dicen `*(Escribí tu respuesta acá)*`. El resto de las celdas (enunciados, explicaciones, ejemplos provistos, encabezados, logos) **no se modifican**.
 >
 > La corrección se realiza celda por celda de manera automática: si modificás el enunciado, borrás una celda provista o agregás celdas nuevas, la corrección puede fallar o quedar incompleta.
 
