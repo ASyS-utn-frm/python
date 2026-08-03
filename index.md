@@ -49,7 +49,7 @@ En los **laboratorios** vas a encontrar celdas marcadas con el comentario `# Tu 
     <tr>
       <td>1. Introducción a Google Colab</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/M01_introduccion_colab.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
-      <td rowspan="9"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/L00_practica_python.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+      <td rowspan="9"><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L00_practica_python.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
     <tr>
       <td>2. Tipos de datos y variables</td>
