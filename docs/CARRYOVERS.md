@@ -43,9 +43,15 @@ Pendientes que esto deja:
   justamente que el semiplano izquierdo y el interior del círculo unitario son
   la misma idea. Si las dos partes quedan escritas como labs independientes
   pegados, la unificación no aporta nada.
-- **README/index:** al publicar cada lab nuevo va su fila; la nota sobre
-  "L01–L08 en desarrollo" quedó desactualizada por partida doble y hay que
-  ajustarla a L01–L05.
+- **README/index: revisión amplia pendiente (pedida el 2026-08-03).** En la
+  sesión del 2026-08-03 se hizo solo lo mínimo —agregar la fila de L03 y
+  corregir la nota de labs pendientes a "L04 y L05"—, pero el usuario dejó
+  planteado que **la página que ven los alumnos en GitHub Pages necesita una
+  actualización más amplia**, todavía sin definir. Al retomarla, revisar al
+  menos: el texto introductorio, que sigue describiendo la estructura vieja;
+  la tabla de laboratorios, que ahora tiene cuatro filas y va a llegar a seis;
+  la sección **Entrega**; y la coherencia entre `README.md` e `index.md`, que
+  se mantienen sincronizados con `cp README.md index.md`.
 
 ### Origen: L02 (2026-08-03) → Destino: repo público, L03 y L04
 
