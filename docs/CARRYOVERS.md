@@ -11,6 +11,42 @@ para incorporar los carryovers pendientes y luego moverlos a "✅ Aplicados".
 
 ## ⬜ Pendientes
 
+### Origen: L04 (2026-08-03) → Destino: L02, L03 y el repo público
+
+**BLOQUEANTE PARA PUBLICAR. Auditoría de licencias de los audios.** Al buscar
+material para L04 se revisó la procedencia de los dos audios que ya estaban en
+`resources/audios/`, y ninguno de los dos está en condiciones claras:
+
+| Archivo | Situación |
+|---|---|
+| `impulsiva_galpon.wav` | El sonido n° 180960 de Freesound **fue borrado**. La licencia ya no es verificable de ninguna manera. |
+| `violin.wav` | Freesound n° 92002 de jcveliz: **CC Sampling Plus 1.0**, licencia que Creative Commons **retiró**. Permite redistribuir copias literales solo con fines no comerciales, con atribución. |
+
+Para material educativo gratuito el segundo caso es defendible; el primero no,
+porque no hay nada que verificar. **Reemplazo acordado con el usuario para la
+respuesta impulsiva:** freesound.org n° 718451, de peter1955 (*IR — Wave pipe 3
+— Science Museum London UK*), **CC BY-NC 4.0**, 48000 Hz, mono, 2,28 s, 214 kB.
+Licencia vigente y verificable. Queda por elegir reemplazo de `violin.wav`.
+
+Consecuencias de hacer el reemplazo, para tenerlas presentes antes de empezar:
+es una tarea aparte que obliga a **regenerar y reejecutar L02 y L03 completos**,
+porque los dos audios están metidos en enunciados, soluciones y respuestas de
+análisis (duración de la reverberación, cantidad de muestras, tramos recortados).
+
+**L04 se escribió deliberadamente sin depender de ninguno de los dos**, así que
+el reemplazo no lo toca. Sus tres audios tienen licencia verificada: las dos
+notas instrumentales vienen del banco de la University of Iowa (*"may be
+downloaded and used for any projects, without restrictions"*) y el mensaje de la
+señal de AM es CC0. Detalle completo en `resources/audios/CREDITOS.md`.
+
+**Bancos de audio con licencia clara, ya explorados** (para no repetir la
+búsqueda): University of Iowa *Musical Instrument Samples*
+(`theremin.music.uiowa.edu/MIS.html`) — notas sueltas de casi cualquier
+instrumento, en cámara anecoica, sin restricciones de uso, es la mejor opción
+para material instrumental; Freesound filtrando por **CC0**; Wikimedia Commons,
+que tiene voz hablada en español pero casi todo bajo CC BY-SA, y el
+*share-alike* se contagia al archivo derivado.
+
 ### Origen: reestructuración (2026-08-03) → Destino: L03, L04, L05
 
 **El curso pasa de 8 laboratorios a 6.** Decisión del usuario, tomada al
@@ -34,24 +70,34 @@ Pendientes que esto deja:
   viejo `_legacy/src/TP3_analisis_de_fourier.md` (serie trigonométrica y serie
   exponencial), que eran la mitad de ese TP. El contenido armónico entra por el
   análisis —FFT de sonidos reales— y no por la síntesis a partir de armónicos.
+  **(Cumplido en L04:** el contenido armónico entra por el ejercicio 9, que
+  analiza el espectro de dos grabaciones reales. No se sintetiza ninguna serie.)
 - **L03 (Muestreo) no puede usar nada de Fourier.** El aliasing se explica en
   el dominio del tiempo, con la frecuencia aparente por plegado y verificación
   de oído. La lectura espectral ("el espectro se repite cada `fs`") es la
   apertura de L04 y hay que escribirla ahí como pago explícito de esta deuda:
   L03 cierra diciendo que se escucha el fenómeno pero todavía no se ve por qué.
+  **(Pagado en el ejercicio 8 de L04.)**
 - **L05 debe confrontar los dos planos.** La razón de unir Laplace y Z es
   justamente que el semiplano izquierdo y el interior del círculo unitario son
   la misma idea. Si las dos partes quedan escritas como labs independientes
   pegados, la unificación no aporta nada.
+  **(Cumplido: el ejercicio 9 de L05 es exclusivamente esa confrontación.**
+  Transforma con $z = e^{sT}$ cuatro rectas verticales del plano $s$ en cuatro
+  arcos del plano $z$, verifica que el radio es $e^{\sigma T}$ y que la recta
+  $\sigma = 0$ es exactamente el círculo unitario, y muestra el polo del RC del
+  ejercicio 1 y los polos complejos del RLC del ejercicio 2 aterrizando donde la
+  fórmula predice. Cierra deduciendo el criterio de Nyquist de la no
+  inyectividad de la transformación.**)**
 - **README/index: revisión amplia pendiente (pedida el 2026-08-03).** En la
-  sesión del 2026-08-03 se hizo solo lo mínimo —agregar la fila de L03 y
-  corregir la nota de labs pendientes a "L04 y L05"—, pero el usuario dejó
-  planteado que **la página que ven los alumnos en GitHub Pages necesita una
-  actualización más amplia**, todavía sin definir. Al retomarla, revisar al
-  menos: el texto introductorio, que sigue describiendo la estructura vieja;
-  la tabla de laboratorios, que ahora tiene cuatro filas y va a llegar a seis;
-  la sección **Entrega**; y la coherencia entre `README.md` e `index.md`, que
-  se mantienen sincronizados con `cp README.md index.md`.
+  sesión del 2026-08-03 se hizo solo lo mínimo —ir agregando la fila de cada
+  lab nuevo—, pero el usuario dejó planteado que **la página que ven los alumnos
+  en GitHub Pages necesita una actualización más amplia**, todavía sin definir.
+  Al 2026-08-03 la tabla ya tiene **las seis filas** (L00–L05) y no falta
+  ninguna, así que lo pendiente es solo la revisión de fondo. Al retomarla,
+  revisar al menos: el texto introductorio, que sigue describiendo la estructura
+  vieja; la sección **Entrega**; y la coherencia entre `README.md` e `index.md`,
+  que se mantienen sincronizados con `cp README.md index.md`.
 
 ### Origen: L02 (2026-08-03) → Destino: repo público, L03 y L04
 
@@ -59,10 +105,14 @@ Pendientes que esto deja:
   `resources/audios/` vía `raw.githubusercontent.com`, y **L03 descarga
   `violin.wav` del mismo lugar**. **Ninguno de los dos notebooks funciona en
   Colab hasta que esos archivos estén commiteados y pusheados a `main`**;
-  al 2026-08-03 `resources/audios/` sigue sin trackear. Créditos en
-  `resources/audios/CREDITOS.md` (freesound.org: 180960 de kleeb y 92002 de
-  jcveliz). Si en el futuro se agregan audios para otros labs, va la misma
-  carpeta y se actualiza ese archivo.
+  al 2026-08-03 `resources/audios/` sigue sin trackear, y son **cinco**
+  archivos: a los dos de L02 se suman los tres de L04
+  (`nota_violin_A4.wav`, `nota_flauta_A4.wav`, `am_misteriosa.wav`), 641 kB en
+  total. **L05 no agrega archivos nuevos**: su ejercicio 8 descarga
+  `nota_violin_A4.wav`, que ya estaba en la lista por L04, así que tampoco
+  funciona en Colab hasta que se haga ese push. Créditos y licencias en `resources/audios/CREDITOS.md`. Si en el futuro
+  se agregan audios para otros labs, va la misma carpeta y se actualiza ese
+  archivo.
 - **`_fuente/Soluciones/audios/`** es una copia local de esos `.wav` que
   existe solo para poder ejecutar la solución antes del push (la celda de
   descarga los saltea si ya están). No hace falta versionarla.
@@ -75,7 +125,7 @@ Pendientes que esto deja:
   que con bucles llevaría media hora. Con la reestructuración del 2026-08-03 el
   cierre de L02 se reescribió para anunciar muestreo (L03) en vez de Fourier,
   **pero la promesa del teorema de convolución se conservó** apuntando a L04.
-  Hay que pagarla ahí.
+  **(Pagada en el ejercicio 4 de L04.)**
 - **Arrays de dos dimensiones: presentados in situ en L02.** `src/M07_numpy.md`
   muestra una matriz de 2x3 y declara explícitamente que "no vamos a
   profundizar en 2D por ahora… aparecerán de forma natural cuando, en algún
@@ -92,7 +142,10 @@ Pendientes que esto deja:
   argumento frecuencial. **L03** reusa el promediador móvil como filtro
   antialiasing antes de submuestrear, todavía sin espectro. **L04 Parte A**
   calcula su respuesta en frecuencia y recién ahí explica por qué uno era
-  pasa-bajos y el otro pasa-altos.
+  pasa-bajos y el otro pasa-altos. **(Hecho en el ejercicio 5 de L04**, que
+  además reproduce por cálculo los 0,964 y 0,163 que L03 había medido
+  generando tonos. El kernel 2D de bordes se llevó a una dimensión como
+  `[-1, 2, -1]`, conservando la suma de pesos nula.**)**
 
 ### Origen: sesión 2026-08-02 → Destino: L01 (por escribir)
 
@@ -222,6 +275,131 @@ sentado que el alumno lo vio.
 ---
 
 ## ✅ Aplicados
+
+- **2026-08-03** — **L05 (Análisis de sistemas: Laplace y Z) escrito. Con él
+  quedan completos los 6 laboratorios del curso.** Lab de dos partes,
+  9 ejercicios, 18 ítems corregibles. `lab_validate.py`: 0 errores, 0 avisos.
+  Solución ejecutada y guardada con outputs (13 celdas de código, 11 gráficos,
+  4 reproductores, sin errores).
+
+  **Parte A (plano $s$):** $H(s)$ con `signal.TransferFunction`, el filtro RC de
+  L04 y su único polo; el RLC serie con tres amortiguamientos y la lectura
+  "parte real = velocidad, parte imaginaria = frecuencia de la oscilación";
+  $H(j\omega)$ como $H(s)$ sobre el eje imaginario, con el módulo leído como
+  producto de distancias a los polos; y realimentación con un control crucero.
+  **Parte B (plano $z$):** el promediador de 8 muestras como FIR y sus siete
+  ceros sobre el círculo unitario; el IIR de primer orden y el radio del polo;
+  estabilidad con el polo adentro, sobre y fuera del círculo; el mismo IIR
+  aplicado a la nota de violín de L04; y el puente $z = e^{sT}$.
+
+  **Decisiones acordadas con el usuario antes de escribir:** planta de control
+  = **control crucero de un auto** (no horno); extensión **liviana**, un solo
+  ejercicio de control en vez de dos; y **sí** usar audio, reusando
+  `nota_violin_A4.wav` de L04, cuya licencia está verificada.
+
+  **Continuidades deliberadas, todas verificadas contra las fuentes:**
+  - $\tau = 0{,}05$ s es el mismo filtro RC del ejercicio 4 de L04, y su polo en
+    $-20$ 1/s reproduce por cálculo la $f_c = 3{,}1831$ Hz que L04 midió sobre
+    el espectro. El ejercicio 1 lo hace explícito.
+  - El promediador `np.ones(8)/8` a $f_s = 16000$ Hz del ejercicio 5 es el de
+    L02, L03 y L04. Sus siete ceros caen en 2000, 4000, 6000 y 8000 Hz, que son
+    exactamente las frecuencias donde L04 vio anularse la curva.
+  - El ejercicio 8 aplica al violín los mismos tres filtros del ejercicio 6, y
+    el cociente medido sobre el espectro coincide con $|H|$ en la fundamental.
+
+  **Decisiones de diseño que conviene conservar:**
+  - El paso de control usa un **escalón de consigna de 90 a 100 km/h**, no un
+    arranque desde cero. Con un salto de 10 km/h la fuerza que pide $K_p = 200$
+    es de 556 N (0,56 m/s²), que es plausible; desde cero serían 5556 N y
+    5,6 m/s², un valor absurdo que le habría quitado credibilidad al ejemplo.
+  - La planta lleva un **retardo de actuador** $\tau_a = 0{,}5$ s. Sin él el
+    denominador del lazo es de segundo grado y **no puede volverse inestable**
+    con ganancias positivas: no habría manera de mostrar polos cruzando al
+    semiplano derecho. Con él, el límite de Routh es $K_i = 512{,}5$, y los
+    valores elegidos (50 y 800) quedan cómodamente a cada lado.
+  - En el ejercicio 7 el numerador queda **fijo** en $b_0 = 0{,}1$ y solo se
+    mueve el polo. La versión con $b_0 = 1-a$ hacía que $b_0$ cambiara de signo
+    al pasar $a$ de 1, lo que ensuciaba el ejemplo con un efecto ajeno a la
+    estabilidad. Con $b_0$ fijo, $a = 1$ da exactamente el acumulador discreto
+    —rampa ante escalón, el análogo del polo en $s = 0$— y $a = 1{,}02$ crece.
+  - `signal.freqz` con `worN=N` devuelve N frecuencias **excluyendo** $f_s/2$.
+    En el ejercicio 5 se usa `worN=2000` (y no 2001) para que 300, 2000, 3400,
+    4000 y 6000 Hz caigan **exactamente** sobre una línea: con 2001 el paso es
+    3,998 Hz, los ceros dan 5·10⁻⁴ en vez de 10⁻¹⁷ y la verificación del
+    producto de distancias falla en el cuarto decimal. Mismo motivo para usar
+    `np.linspace(0, 200, 4001)` en el ejercicio 3, que pone $\omega = 20$ rad/s
+    justo sobre la grilla y da $|H| = 0{,}7071$ y fase $-45{,}00°$ exactas.
+  - El convenio de signos de `lfilter` (`a = [1.0, -a]`, no `[1.0, a]`) se
+    presenta en una celda provista que resuelve el mismo filtro de las dos
+    maneras, con `lfilter` y con un bucle explícito, y compara. Es el error más
+    frecuente al usar estas funciones y conviene que quede desactivado antes
+    del primer ejercicio de la Parte B.
+
+  **Nota sobre precisión que se corrigió durante la verificación:** el texto
+  decía que con $a = 0{,}99$ la atenuación en agudos era de 60 dB y que el
+  filtro inverso amplificaría el ruido mil veces. El valor real es **45 dB**
+  —la cota es $(1-a)/(1+a) = 0{,}005$ en Nyquist— y el factor, unas doscientas
+  veces. Corregido. **Cuidado con estimar atenuaciones de memoria: la de un
+  polo simple está acotada y la cota se calcula en una línea.**
+
+  README/index: fila de L05 agregada. `PROJECT_PLAN.md`: Fase 3 marcada como
+  completada.
+
+- **2026-08-03** — **L04 (Fourier, del continuo al discreto) escrito.**
+  Lab de dos partes, 11 ejercicios, 22 ítems corregibles. `lab_validate.py`:
+  0 errores, 0 avisos. Solución ejecutada y guardada con outputs (14 celdas de
+  código, 14 gráficos, 5 reproductores, sin errores).
+
+  **Parte A (continuo):** transformada por definición sobre el pulso rectangular
+  y comparación con `A·T·sinc(fT)`; duración ↔ ancho de banda con tres pulsos;
+  retardo ↔ fase lineal, recuperando $t_0$ de la pendiente de la fase; teorema
+  de convolución verificado con un pulso a través de un filtro RC; y respuesta
+  en frecuencia de los dos filtros de L02.
+  **Parte B (discreto):** `rfft` y el factor `2/N`; resolución $\Delta f = 1/D$
+  con dos tonos a 5 Hz; periodicidad del espectro muestreado y deducción de la
+  regla de plegado; timbre de violín y flauta en la misma nota; y proyecto de
+  radio AM en dos ejercicios (encontrar la portadora, demodular y recuperar el
+  mensaje).
+
+  **Tres deudas saldadas:** el teorema de convolución prometido en el cierre de
+  L02 (ejercicio 4), los nombres pasa-bajos / pasa-altos de L02 (ejercicio 5), y
+  la regla de plegado enunciada sin demostrar en L03 (ejercicio 8).
+
+  **Decisiones de diseño que conviene conservar:**
+  - La Parte A lleva factor `dt` en todas las transformadas porque aproxima una
+    integral; la respuesta en frecuencia de un filtro discreto **no lo lleva**,
+    porque su resultado es una ganancia sin unidades. El laboratorio lo explica
+    y el checklist de entrega lo verifica: es el error más fácil de cometer.
+  - El ejercicio 5 reproduce por cálculo los **0,964 a 300 Hz y 0,163 a
+    3400 Hz** que L03 había medido generando tonos. Los dos números coinciden
+    hasta el tercer decimal y ese cierre es deliberado; si alguna vez se cambia
+    la ventana del promediador o la `fs` de L03, hay que recalcular los dos.
+  - El archivo `am_misteriosa.wav` dura **3,000 s exactos a 48000 Hz** para que
+    la portadora de 13750 Hz caiga justo sobre una línea de la FFT ($\Delta f =
+    1/3$ Hz). Sin esa condición la detección coherente falla: un error de 1 Hz
+    en $f_c$ ya vuelve inservible el mensaje, y el ejercicio 11 lo hace escuchar
+    a propósito.
+  - Al demodular, el término de $2f_c = 27500$ Hz **supera** la frecuencia de
+    Nyquist del archivo y aparece plegado en 20500 Hz. No es un defecto: es
+    aliasing generado *dentro* del procesamiento, y el ejercicio lo usa como
+    ejemplo de que el plegado no es solo un problema de la etapa de adquisición.
+    El filtro provisto lo atenúa −78 dB igual.
+  - El ancho de banda ocupado se mide con umbral **piso de ruido + 12 dB dentro
+    de una ventana de $f_c \pm 6000$ Hz**. La ventana es imprescindible: sin
+    ella, una línea de ruido suelta en cualquier punto del espectro fija el
+    mínimo o el máximo y el resultado se va a 24 kHz. Con ese criterio da
+    6710 Hz ocupados y 3355 Hz de mensaje, que coincide con los 3400 Hz reales.
+
+  **Defecto encontrado y corregido durante la verificación:** la primera versión
+  del ejercicio 10 usaba umbral piso + 20 dB sin ventana. Daba 2663 Hz de ancho
+  ocupado —la mitad de lo real— porque a 20 dB sobre el piso solo sobrevive el
+  centro de las bandas laterales. **Cuidado al escribir mediciones sobre
+  espectros de señales reales: el resultado depende del umbral, y un umbral
+  elegido sin verificar contra el valor conocido produce un número que parece
+  razonable y está mal.**
+
+  README/index: fila de L04 agregada y la nota de "L04 y L05 en desarrollo"
+  corregida a "L05".
 
 - **2026-08-03** — **Reestructuración a 6 labs y L03 (Muestreo) escrito.**
   Detalle de la reestructuración arriba, en Pendientes. Lo hecho en esta sesión:

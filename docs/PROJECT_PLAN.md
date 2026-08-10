@@ -1,7 +1,8 @@
 # Plan Maestro — Curso de introducción a Python para ASyS
 
 > Documento de referencia para organizar el trabajo a lo largo de múltiples sesiones.
-> Última actualización: 2026-08-03 (reestructuración a L00–L05: Fourier queda en
+> Última actualización: 2026-08-03 (L05 escrito — **los 6 laboratorios están completos**)
+> Actualización previa: 2026-08-03 (reestructuración a L00–L05: Fourier queda en
 > un único lab continuo→discreto, muestreo pasa a L03, Laplace y Z se unen en un
 > lab de dos partes, y la serie de Fourier sale del material de laboratorio)
 
@@ -16,7 +17,7 @@ Tiene **tres ejes de trabajo**:
 | Eje | Qué | Estado actual |
 |-----|-----|---------------|
 | **A. Módulos** (M01–M09) | Notebooks expositivos que cubren Python de cero | M01 ✅, M02 ✅, M03 ✅, M04 ✅, M05 ✅, M06 ✅, M07 ✅, M08 ✅, M09 ✅ |
-| **B. Laboratorios** (L00–L05) | Notebooks entregables que aplican los módulos | L00 ✅, L01 ✅, L02 ✅, L03–L05 pendientes |
+| **B. Laboratorios** (L00–L05) | Notebooks entregables que aplican los módulos | L00 ✅, L01 ✅, L02 ✅, L03 ✅, L04 ✅, L05 ✅ — **completo** |
 | **C. Página de inicio** | README.md / index.md | Desactualizada; reescribir en Fase 4 |
 
 Y un **eje transversal de infraestructura**:
@@ -135,9 +136,9 @@ Archivo `docs/AUDIT_REPORT.md` generado con hallazgos detallados, matriz de acci
 | L00 ✅ | `L00_practica_python` | Práctica integradora de Python | **Primer entregable del curso.** Ejercita todas las piezas de M01–M09 con escenarios nuevos (distintos a los de los módulos). Contextos de electrónica y telecomunicaciones (longitud de onda, notas musicales, bandas de radio, filtros RC, baterías, DTMF). Cierra con un mini-proyecto integrador (detector DTMF por MSE, sin Fourier). |
 | L01 ✅ | `L01_senales_y_operaciones` | Señales y operaciones | **Preludio manipulativo a convolución.** Señales elementales sobre un mismo eje `t` (escalón, pulso, rampa, exponencial, senoide), desplazamiento `x(t − t₀)`, reflexión `x(−t)`, escalado y suma, producto punto a punto, recorte con slicing y máscaras. Mini-proyecto: sintetizar un "beep-beep" de alarma. |
 | L02 ✅ | `L02_convolucion` | Convolución | Conservar el enfoque tangible del lab anterior (reverberación de galpón sobre grabación de violín). Dificultad graduada: definición con bucles sobre 5 muestras → flip-and-slide → LTI → audio → convolución 2D en imágenes. |
-| L03 | `L03_muestreo` | Muestreo | **El puente.** Se paga acá la deuda conceptual del hilo continuo↔discreto: `fs`, `dt`, reconstrucción, criterio de Nyquist y aliasing **audible**. Explicación en el dominio del tiempo (frecuencia aparente por plegado); la lectura espectral —"el espectro se repite cada `fs`"— queda como apertura de L04. Cierra con filtrado antialiasing reusando el promediador móvil de L02. |
-| L04 | `L04_fourier` | Fourier, del continuo al discreto | Lab de **dos partes**. **Parte A (continuo):** transformada de Fourier por definición, espectro del pulso rectangular, duración ↔ ancho de banda, retardo ↔ fase lineal, **teorema de convolución** y respuesta en frecuencia de los filtros de L02 (recién acá se explica por qué uno era pasa-bajos y el otro pasa-altos). **Parte B (discreto):** DFT/FFT como el cálculo efectivo sobre muestras, resolución en frecuencia, espectro de audio real (timbre: dos instrumentos en la misma nota) y proyecto de la **radio AM clandestina** — se entrega un `.wav` con una portadora a `fc` desconocida más ruido; el alumno identifica `fc` por FFT, demodula multiplicando por `cos(2π·fc·t)`, filtra con un **pasa-bajos provisto ya diseñado** y recupera el mensaje. |
-| L05 | `L05_analisis_de_sistemas` | Laplace y transformada Z | Lab de **dos partes**, unificado porque es el mismo laboratorio en dos planos: mismo *toolchain* (`scipy.signal`), mismas figuras (polos y ceros, respuesta al escalón, respuesta al impulso, respuesta en frecuencia) y la misma lectura "dónde están los polos → cómo se comporta el sistema". **Parte A (Laplace):** `scipy.signal.TransferFunction`, con dos ejemplos — (a) circuito RC o RLC; (b) sistema de control **tangible** (cruise control, control de temperatura de un horno — *nunca una "planta genérica"*), mostrando el efecto de un parámetro sobre polos y respuesta transitoria. **Parte B (Z):** `scipy.signal.dlti` / `freqz`, polos y ceros en el círculo unitario, filtro IIR simple. El cierre confronta explícitamente semiplano izquierdo ↔ interior del círculo unitario, que es la analogía que se pierde cuando los dos temas se dictan por separado. |
+| L03 ✅ | `L03_muestreo` | Muestreo | **El puente.** Se paga acá la deuda conceptual del hilo continuo↔discreto: `fs`, `dt`, reconstrucción, criterio de Nyquist y aliasing **audible**. Explicación en el dominio del tiempo (frecuencia aparente por plegado); la lectura espectral —"el espectro se repite cada `fs`"— queda como apertura de L04. Cierra con filtrado antialiasing reusando el promediador móvil de L02. |
+| L04 ✅ | `L04_fourier` | Fourier, del continuo al discreto | Lab de **dos partes**. **Parte A (continuo):** transformada de Fourier por definición, espectro del pulso rectangular, duración ↔ ancho de banda, retardo ↔ fase lineal, **teorema de convolución** y respuesta en frecuencia de los filtros de L02 (recién acá se explica por qué uno era pasa-bajos y el otro pasa-altos). **Parte B (discreto):** DFT/FFT como el cálculo efectivo sobre muestras, resolución en frecuencia, espectro de audio real (timbre: dos instrumentos en la misma nota) y proyecto de la **radio AM clandestina** — se entrega un `.wav` con una portadora a `fc` desconocida más ruido; el alumno identifica `fc` por FFT, demodula multiplicando por `cos(2π·fc·t)`, filtra con un **pasa-bajos provisto ya diseñado** y recupera el mensaje. |
+| L05 ✅ | `L05_analisis_de_sistemas` | Laplace y transformada Z | Lab de **dos partes**, unificado porque es el mismo laboratorio en dos planos: mismo *toolchain* (`scipy.signal`), mismas figuras (polos y ceros, respuesta al escalón, respuesta al impulso, respuesta en frecuencia) y la misma lectura "dónde están los polos → cómo se comporta el sistema". **Parte A (Laplace):** `scipy.signal.TransferFunction`, con dos ejemplos — (a) circuito RC o RLC; (b) sistema de control **tangible** (cruise control, control de temperatura de un horno — *nunca una "planta genérica"*), mostrando el efecto de un parámetro sobre polos y respuesta transitoria. **Parte B (Z):** `scipy.signal.dlti` / `freqz`, polos y ceros en el círculo unitario, filtro IIR simple. El cierre confronta explícitamente semiplano izquierdo ↔ interior del círculo unitario, que es la analogía que se pierde cuando los dos temas se dictan por separado. |
 
 > **Nota de numeración (2026-08-03):** esta tabla reemplaza al plan de 8 labs del
 > 2026-08-02, que a su vez había reemplazado al de 9. Cambios de esta revisión:
@@ -308,7 +309,7 @@ proyecto/
 | 0. Infraestructura | ✅ Completada | Sesión 1 |
 | 1. Auditoría | ✅ Completada | Sesión 2 |
 | 2. Módulos | ✅ Completada (M01–M09) | Sesiones 3–6 |
-| 3. Laboratorios (L00 + L01–L05) | 🔶 En curso (L00 ✅, L01 ✅, L02 ✅; próximo L03 Muestreo) | Sesiones 7–10 |
+| 3. Laboratorios (L00 + L01–L05) | ✅ Completada (L00–L05 escritos, validados y con solución ejecutada) | Sesiones 7–10 |
 | 4. Página inicio | ✅ Overhaul aplicado (se irá actualizando con cada Lx nuevo) | Hecho 2026-04-16 |
 
 > Las sesiones son orientativas. Cada una puede subdividirse según la complejidad encontrada.
