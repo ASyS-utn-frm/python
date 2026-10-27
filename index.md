@@ -1,9 +1,6 @@
-
-<style>
-  .page-title {
-    display: none;
-  }
-</style>
+---
+title: Curso introductorio de Python para Análisis de Señales y Sistemas
+---
 
 <div style="text-align: center;">
   <img src="resources/logoUTN.jpg" alt="Logo UTN">

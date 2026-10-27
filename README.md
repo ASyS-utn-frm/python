@@ -1,10 +1,4 @@
 
-<style>
-  .page-title {
-    display: none;
-  }
-</style>
-
 <div style="text-align: center;">
   <img src="resources/logoUTN.jpg" alt="Logo UTN">
 </div>
