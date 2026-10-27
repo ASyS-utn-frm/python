@@ -23,7 +23,7 @@ El material se desarrolla como una serie de Jupyter Notebooks pensados para ejec
 El curso tiene dos tipos de notebooks:
 
 - **Módulos** (prefijo `M`): notebooks expositivos que presentan, de a poco, las herramientas del lenguaje (variables, colecciones, control de flujo, funciones, clases, NumPy, Matplotlib y SymPy). Están pensados para leerse y ejecutarse, e incluyen actividades cortas para practicar cada concepto sobre la marcha.
-- **Laboratorios** (prefijo `L`): notebooks **entregables** en los que se aplican las herramientas de los módulos a problemas concretos de electrónica y telecomunicaciones. Se entregan a través del campus virtual (ver sección **Entrega** más abajo).
+- **Laboratorios** (prefijo `L`): notebooks **entregables** en los que se aplican las herramientas de los módulos a problemas concretos de electrónica y telecomunicaciones.
 
 ## Cómo trabajar con el material
 
@@ -31,7 +31,7 @@ Para abrir un notebook, hacé clic en el botón **Open in Colab** de la tabla co
 
 En los **módulos** podés modificar el código libremente: la idea es que experimentes para fijar los conceptos.
 
-En los **laboratorios** vas a encontrar celdas marcadas con el comentario `# Tu código aquí` y celdas de respuesta con el texto `*(Escribí tu respuesta acá)*`. Esas son las únicas celdas que debés modificar (ver la sección **Entrega**).
+En los **laboratorios** vas a encontrar celdas marcadas con el comentario `# Tu código aquí` y celdas de respuesta con el texto `*(Escribí tu respuesta acá)*`. Esas son las únicas celdas que debés modificar.
 
 
 # Módulos
@@ -89,7 +89,7 @@ En los **laboratorios** vas a encontrar celdas marcadas con el comentario `# Tu 
 
 # Laboratorios
 
-El Laboratorio 0 cierra la parte introductoria de Python y es el primer entregable del curso. Los laboratorios siguientes (L04 y L05) se publican a medida que se avanza con los temas de la asignatura.
+El Laboratorio 0 cierra la parte introductoria de Python y es el primer entregable del curso. Los laboratorios 1 a 5 aplican esas herramientas a los temas de la asignatura.
 
 Cada laboratorio combina **celdas de código**, donde escribís la solución, y **preguntas de análisis**, donde explicás con tus palabras qué observaste. Las dos cosas se corrigen.
 
@@ -117,50 +117,19 @@ Cada laboratorio combina **celdas de código**, donde escribís la solución, y 
       <td>Laboratorio 3 — Muestreo</td>
       <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L03_muestreo.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
     </tr>
+    <tr>
+      <td>Laboratorio 4 — Fourier, del continuo al discreto</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L04_fourier.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
+    <tr>
+      <td>Laboratorio 5 — Análisis de sistemas: Laplace y transformada Z</td>
+      <td><a href="https://colab.research.google.com/github/ASyS-utn-frm/python/blob/main/Laboratorios/L05_analisis_de_sistemas.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"  alt="Open In Colab"></a></td>
+    </tr>
   </tbody>
 </table>
 
 
 
-
-# Entrega
-
-Los laboratorios se entregan a través del campus virtual de la asignatura. El procedimiento es el mismo para todos.
-
-### 1. Resolver el laboratorio en Colab
-
-Abrí el laboratorio con el link **Open in Colab** correspondiente. Autenticate con tu cuenta de Google para que Colab guarde una copia editable en tu Drive.
-
-### 2. Respetar qué celdas se pueden modificar
-
-> **IMPORTANTE.** Solo se deben completar las celdas marcadas con el comentario `# Tu código aquí` y las celdas de respuesta, que dicen `*(Escribí tu respuesta acá)*`. El resto de las celdas (enunciados, explicaciones, ejemplos provistos, encabezados, logos) **no se modifican**.
->
-> La corrección se realiza celda por celda de manera automática: si modificás el enunciado, borrás una celda provista o agregás celdas nuevas, la corrección puede fallar o quedar incompleta.
-
-Si necesitás probar algo fuera de una celda de actividad, hacelo en tu copia local y **revertí los cambios antes de entregar**.
-
-### 3. Verificar que el notebook corre de punta a punta
-
-Antes de descargar, reiniciá el entorno y ejecutá todas las celdas en orden:
-
-- En el menú de Colab: **Entorno de ejecución → Reiniciar e iniciar todo**.
-- Esperá a que terminen todas las celdas y confirmá que no quedan errores.
-
-### 4. Descargar el archivo `.ipynb`
-
-Desde Colab: **Archivo → Descargar → Descargar `.ipynb`**. Guardá el archivo en tu computadora.
-
-### 5. Renombrar con tu apellido
-
-Agregá tu apellido al nombre del archivo, por ejemplo:
-
-- `L00_practica_python_Perez.ipynb`
-
-### 6. Subir al campus virtual
-
-Entrá al aula virtual de la asignatura y subí el archivo en el apartado destinado a la entrega del laboratorio correspondiente.
-
-Las fechas de entrega se publican en el campus virtual de la asignatura.
 
 
 # Autor
