@@ -16,3 +16,6 @@ _fuente/
 
 # Estado local de Claude Code (memoria de proyecto, configuración de sesión).
 .claude/
+
+# Temporales de trabajo (scripts descartables, salidas intermedias).
+scratchpad/

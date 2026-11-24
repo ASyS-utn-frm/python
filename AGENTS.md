@@ -12,6 +12,12 @@ The notebooks are designed to run on **Google Colab** and are served as a GitHub
 
 **Publishability:** since the course is published standalone, **do not include phrases that reference the professor, assistants, or a specific cohort** (e.g. "consultá al profesor", "avisá al ayudante"). Material must be self-contained.
 
+## Sibling repositories
+
+On the author's machine this repository sits next to the other repositories of the course (book, exercises, exams, slides and shared infrastructure), all inside one parent folder. The parent folder's `AGENTS.md` describes them, and Claude Code loads it automatically when working here. Those repositories are **private**. Content from them (exam material, solutions, unpublished book text) must not be copied into this public repository, and their names or local paths must not appear in published notebooks. For the same reason, Claude's project memory for this repository is kept in the private shared repository, not here.
+
+Instructions are written in this `AGENTS.md`; `CLAUDE.md` is a symbolic link to it.
+
 ## Repository Structure
 
 ```
