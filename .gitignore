@@ -19,3 +19,8 @@ _fuente/
 
 # Temporales de trabajo (scripts descartables, salidas intermedias).
 scratchpad/
+
+# Instrucciones para agentes: se versionan en un repositorio privado y
+# aquí son enlaces locales.
+AGENTS.md
+CLAUDE.md
