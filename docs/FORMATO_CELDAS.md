@@ -4,7 +4,7 @@
 > (`MNN_*`).** Los laboratorios dejaron de usar este formato: ahora siguen el
 > contrato del plugin `lab-notebook` (`.lab.md`, `cell_id` tipo `ejN-code`,
 > placeholder `# Tu código aquí`), cuya especificación vive en el plugin y no
-> se duplica acá. Ver la sección "two different toolchains" de `AGENTS.md`.
+> se duplica acá. Los módulos siguen con el flujo `src/*.md` + `tools/md2nb.py`.
 
 Este documento define cómo se identifican y clasifican las celdas en los módulos
 del curso de Análisis de Señales y Sistemas.

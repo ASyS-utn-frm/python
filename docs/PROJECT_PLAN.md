@@ -43,7 +43,7 @@ Y un **eje transversal de infraestructura**:
 
 ### 0.3 Memoria de proyecto
 - [x] Archivos de memoria persistente en `.claude/projects/.../memory/`
-- [x] Actualización de `AGENTS.md` con nuevo workflow
+- [x] Actualización de las instrucciones del agente con nuevo workflow
 
 ---
 
@@ -161,8 +161,8 @@ Archivo `docs/AUDIT_REPORT.md` generado con hallazgos detallados, matriz de acci
 ### Entregable por cada laboratorio
 
 > **Cambio de toolchain (2026-08-02):** los laboratorios pasaron al contrato del
-> plugin `lab-notebook`. Ya no se escriben como `src/Lx.md` + `md2nb.py`. Ver la
-> sección "two different toolchains" de `AGENTS.md`. Los **módulos** siguen con
+> plugin `lab-notebook`. Ya no se escriben como `src/Lx.md` + `md2nb.py`. Los
+> **módulos** siguen con
 > el flujo viejo (`src/*.md` + `md2nb.py`), que no cambió.
 
 - Fuente única `_fuente/sources/Lx_tema.lab.md` — enunciado y solución juntos,
@@ -296,7 +296,6 @@ proyecto/
 │   ├── TP0_rubric.md
 │   └── ...
 ├── *.ipynb                      ← Archivos generados (output)
-├── AGENTS.md                    ← Instrucciones para Claude Code
 └── README.md / index.md         ← GitHub Pages
 ```
 

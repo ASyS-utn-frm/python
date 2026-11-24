@@ -529,7 +529,7 @@ sentado que el alumno lo vio.
   fallaría). 18 ítems corregibles. Los dos labs validan con cero errores y sus
   soluciones ejecutan limpias.
 
-  **Consecuencias estructurales** (detalle en `CLAUDE.md`): los enunciados pasan
+  **Consecuencias estructurales**: los enunciados pasan
   a `Laboratorios/`; las fuentes `.lab.md` y las soluciones viven en un repo
   privado montado como `_fuente/` e ignorado por git, porque este repo es
   público y la fuente lleva las respuestas adentro. `rubrics/L00_rubric.md`
@@ -624,7 +624,7 @@ sentado que el alumno lo vio.
   enunciado (qué se pide + qué herramienta usar + conceptos del dominio
   como DTMF, RMS, bandas RF, dB de tensión explicados desde cero).
   Decisiones clave: (a) nomenclatura `L00_*` siguiendo convención
-  `LNN_*` de CLAUDE.md; (b) no se mete en muestreo/`dt`/Nyquist (eso
+  `LNN_*` del curso; (b) no se mete en muestreo/`dt`/Nyquist (eso
   queda para L1); (c) sí usa `linspace`/`plot`/`stem` pero sin entrar
   en la reflexión continuo↔discreto. Archivos: `src/L00_practica_python.md`
   (34 celdas), notebook generado con `md2nb.py`, y `rubrics/L00_rubric.md`
